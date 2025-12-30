@@ -52,7 +52,8 @@ async function init() {
 
     } catch (error) {
         console.error('Failed to initialize application:', error);
-        showError('Failed to load snowfall data. Please refresh the page to try again.');
+        const errorMessage = error.message || 'Failed to load snowfall data. Please refresh the page to try again.';
+        showError(errorMessage);
     }
 }
 
@@ -61,6 +62,8 @@ async function init() {
  * @returns {Promise<Object>} Parsed JSON data
  */
 async function loadSnowfallData() {
+    const timeout = 30000; // 30 second timeout for large file
+
     try {
         // Build a data URL that works both on GitHub Pages and when loaded without a trailing slash
         // Example: https://example.github.io/repo (no slash) should still resolve to
@@ -75,18 +78,60 @@ async function loadSnowfallData() {
             dataUrl = new URL('data/snowfall-data.json', baseHref);
         }
 
-        const response = await fetch(dataUrl);
+        console.log(`Fetching data from: ${dataUrl}`);
+        console.log(`Current location: ${window.location.href}`);
+
+        // Create abort controller for timeout
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+        const response = await fetch(dataUrl, {
+            signal: controller.signal,
+            cache: 'no-cache' // Ensure fresh fetch
+        });
+
+        clearTimeout(timeoutId);
 
         if (!response.ok) {
+            // Provide helpful error message for 404
+            if (response.status === 404) {
+                throw new Error(`HTTP 404: File not found at ${dataUrl}. Please ensure the snowfall-data.json file exists in the data/ directory and is committed to the repository.`);
+            }
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
 
+        // Check content type
+        const contentType = response.headers.get('content-type');
+        if (contentType && !contentType.includes('application/json') && !contentType.includes('text/json')) {
+            console.warn(`Unexpected content type: ${contentType}, but proceeding with parse`);
+        }
+
+        console.log('Response received, parsing JSON...');
         const data = await response.json();
+        console.log('JSON parsed successfully');
         return data;
 
     } catch (error) {
         console.error('Error loading snowfall data:', error);
-        throw new Error(`Failed to load data: ${error.message}`);
+        console.error('Error details:', {
+            name: error.name,
+            message: error.message,
+            url: dataUrl,
+            location: window.location.href
+        });
+
+        // Provide more specific error messages
+        if (error.name === 'AbortError') {
+            throw new Error('Request timed out after 30 seconds. The data file (2.1MB) may be too large for your connection. Please try again or check your internet connection.');
+        } else if (error.message.includes('Failed to fetch') || error.message.includes('NetworkError') || error.message.includes('TypeError')) {
+            throw new Error('Network error. Please check your internet connection and try again. If the problem persists, the data file may not be accessible.');
+        } else if (error.message.includes('404') || error.message.includes('Not Found')) {
+            throw new Error('Data file not found (404). Please ensure the snowfall-data.json file exists in the data/ directory and is committed to the GitHub repository.');
+        } else if (error.message.includes('JSON') || error.message.includes('parse') || error.message.includes('Unexpected token')) {
+            throw new Error('Invalid JSON data. The data file may be corrupted or incomplete.');
+        } else {
+            throw new Error(`Failed to load data: ${error.message}`);
+        }
     }
 }
 
