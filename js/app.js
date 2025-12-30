@@ -72,10 +72,18 @@ async function loadSnowfallData() {
 
         if (typeof window !== 'undefined' && window.location) {
             const { origin, pathname } = window.location;
-            const normalizedPath = pathname.endsWith('/') ? pathname : `${pathname}/`;
-            const baseHref = `${origin}${normalizedPath}`;
+            // Remove filename (like index.html) from pathname if present
+            let basePath = pathname;
+            if (basePath.includes('/index.html')) {
+                basePath = basePath.replace('/index.html', '');
+            }
+            // Ensure base path ends with / for proper URL resolution
+            if (!basePath.endsWith('/')) {
+                basePath = `${basePath}/`;
+            }
+            const baseHref = `${origin}${basePath}`;
 
-            dataUrl = new URL('data/snowfall-data.json', baseHref);
+            dataUrl = new URL('data/snowfall-data.json', baseHref).href;
         }
 
         console.log(`Fetching data from: ${dataUrl}`);
@@ -95,7 +103,8 @@ async function loadSnowfallData() {
         if (!response.ok) {
             // Provide helpful error message for 404
             if (response.status === 404) {
-                throw new Error(`HTTP 404: File not found at ${dataUrl}. Please ensure the snowfall-data.json file exists in the data/ directory and is committed to the repository.`);
+                const urlString = typeof dataUrl === 'string' ? dataUrl : dataUrl.href || String(dataUrl);
+                throw new Error(`HTTP 404: File not found at ${urlString}. Please ensure the snowfall-data.json file exists in the data/ directory and is committed to the repository.`);
             }
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
@@ -112,11 +121,12 @@ async function loadSnowfallData() {
         return data;
 
     } catch (error) {
+        const urlString = typeof dataUrl === 'string' ? dataUrl : dataUrl.href || String(dataUrl);
         console.error('Error loading snowfall data:', error);
         console.error('Error details:', {
             name: error.name,
             message: error.message,
-            url: dataUrl,
+            url: urlString,
             location: window.location.href
         });
 
