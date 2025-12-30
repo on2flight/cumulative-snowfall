@@ -83,7 +83,7 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
     - **Property 7: Slider Bounds Match Data**
     - **Validates: Requirements 4.1**
 
-- [-] 7. Implement main application
+- [x] 7. Implement main application
   - [x] 7.1 Create app.js to orchestrate components
     - Implement init() function as entry point
     - Load data and show loading indicator
@@ -92,7 +92,7 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
     - Wire slider changes to chart updates
     - Hide loading indicator when ready
     - _Requirements: 1.1, 1.6, 4.5_
-  - [-] 7.2 Add data source attribution
+  - [x] 7.2 Add data source attribution
     - Add footer with NOAA Winter Park station attribution text
     - Include note about 1990-2025 data range
     - Ensure attribution is visible without scrolling on desktop
