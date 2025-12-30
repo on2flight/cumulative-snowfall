@@ -16,6 +16,11 @@ async function init() {
     try {
         console.log('Initializing Snowfall Tracker...');
 
+        // Verify Chart.js is loaded
+        if (typeof Chart === 'undefined') {
+            throw new Error('Chart.js library failed to load. Please check your internet connection and refresh the page.');
+        }
+
         // Show loading indicator
         showLoading();
 

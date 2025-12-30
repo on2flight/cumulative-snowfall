@@ -6,7 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winter Park Snowfall Tracker</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script>
+        // Verify Chart.js loaded correctly
+        if (typeof Chart === 'undefined') {
+            console.error('Chart.js failed to load. Chart is undefined.');
+        } else {
+            console.log('Chart.js loaded successfully. Version:', Chart.version || 'unknown');
+        }
+    </script>
 </head>
 
 <body>
