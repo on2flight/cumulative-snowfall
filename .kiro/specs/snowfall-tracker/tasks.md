@@ -35,21 +35,21 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
     - **Property 8: Season Filtering by Range**
     - **Validates: Requirements 2.4, 2.5, 4.3**
 
-- [ ] 3. Implement chart visualization
-  - [ ] 3.1 Create chart-manager.js with Chart.js integration
+- [x] 3. Implement chart visualization
+  - [x] 3.1 Create chart-manager.js with Chart.js integration
     - Implement initChart(canvasId, seasons) function
     - Implement updateChart(chart, seasons) function
     - Configure Chart.js for line chart with multiple datasets
     - Set up X-axis for calendar months (Aug-Jul)
     - Set up Y-axis for cumulative inches with dynamic scaling
     - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5_
-  - [ ] 3.2 Implement color gradient and labeling
+  - [x] 3.2 Implement color gradient and labeling
     - Implement getSeasonColor(seasonIndex, totalSeasons) function
     - Implement formatSeasonLabel(startYear) function
     - Apply dark-to-light blue gradient (newest = darkest)
     - Add season labels at right end of each series
     - _Requirements: 2.6, 2.7_
-  - [ ] 3.3 Write property tests for chart utilities
+  - [x] 3.3 Write property tests for chart utilities
     - **Property 4: Color Gradient Ordering**
     - **Property 5: Season Label Format**
     - **Validates: Requirements 2.6, 2.7**
