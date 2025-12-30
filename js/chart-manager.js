@@ -237,10 +237,26 @@ function highlightSeries(chart, datasetIndex) {
     chart.data.datasets.forEach((dataset, index) => {
         if (index === datasetIndex) {
             dataset.borderWidth = 4; // Thicker line for highlighted
-            dataset.borderColor = dataset.borderColor.replace(/[\d.]+\)$/, '1)'); // Full opacity
+            // Ensure full opacity for highlighted series
+            const originalColor = getSeasonColor(index, chart.data.datasets.length);
+            dataset.borderColor = originalColor;
         } else {
             dataset.borderWidth = 2;
-            dataset.borderColor = dataset.borderColor.replace(/[\d.]+\)$/, '0.3)'); // Dimmed
+            // Convert HSL to HSLA with reduced opacity for dimmed series
+            const originalColor = getSeasonColor(index, chart.data.datasets.length);
+            if (originalColor.startsWith('hsl(')) {
+                // Convert hsl(h, s%, l%) to hsla(h, s%, l%, 0.3)
+                dataset.borderColor = originalColor.replace('hsl(', 'hsla(').replace(')', ', 0.3)');
+            } else if (originalColor.startsWith('#')) {
+                // Handle hex colors by converting to rgba
+                const r = parseInt(originalColor.slice(1, 3), 16);
+                const g = parseInt(originalColor.slice(3, 5), 16);
+                const b = parseInt(originalColor.slice(5, 7), 16);
+                dataset.borderColor = `rgba(${r}, ${g}, ${b}, 0.3)`;
+            } else {
+                // Fallback for other color formats
+                dataset.borderColor = originalColor;
+            }
         }
     });
 

@@ -1,71 +1,191 @@
-// Main application entry point
-// Temporary implementation for checkpoint testing - will be properly implemented in task 7
+// Main application orchestration
+// Coordinates data loading, chart initialization, and slider interaction
 
-let currentChart = null;
-let allSeasons = [];
+let appState = {
+    allSeasons: [],
+    filteredSeasons: [],
+    chart: null,
+    isLoaded: false
+};
 
-// Load snowfall data from JSON file
+/**
+ * Application entry point
+ * Initializes all components and wires them together
+ */
+async function init() {
+    try {
+        console.log('Initializing Snowfall Tracker...');
+
+        // Show loading indicator
+        showLoading();
+
+        // Load snowfall data
+        console.log('Loading snowfall data...');
+        const data = await loadSnowfallData();
+
+        if (!data || !data.seasons || !Array.isArray(data.seasons)) {
+            throw new Error('Invalid data format received');
+        }
+
+        appState.allSeasons = data.seasons;
+        appState.filteredSeasons = [...data.seasons]; // Start with all seasons
+
+        console.log(`Loaded ${data.seasons.length} seasons of data`);
+
+        // Get data bounds for slider initialization
+        const minYear = Math.min(...data.seasons.map(s => s.startYear));
+        const maxYear = Math.max(...data.seasons.map(s => s.startYear));
+
+        console.log(`Data range: ${minYear}-${maxYear}`);
+
+        // Initialize slider with data bounds
+        initSlider('year-slider-container', minYear, maxYear, onSliderChange);
+
+        // Initialize chart with all seasons
+        appState.chart = initChart('snowfall-chart', appState.filteredSeasons);
+
+        // Mark as loaded and hide loading indicator
+        appState.isLoaded = true;
+        hideLoading();
+
+        console.log('Snowfall Tracker initialized successfully');
+
+    } catch (error) {
+        console.error('Failed to initialize application:', error);
+        showError('Failed to load snowfall data. Please refresh the page to try again.');
+    }
+}
+
+/**
+ * Load snowfall data from static JSON file
+ * @returns {Promise<Object>} Parsed JSON data
+ */
 async function loadSnowfallData() {
     try {
         const response = await fetch('data/snowfall-data.json');
+
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
+
         const data = await response.json();
-        return data.seasons;
+        return data;
+
     } catch (error) {
         console.error('Error loading snowfall data:', error);
-        throw error;
+        throw new Error(`Failed to load data: ${error.message}`);
     }
 }
 
-// Initialize the application
-async function init() {
-    console.log('Snowfall Tracker app initializing...');
+/**
+ * Handle slider range changes
+ * Filters seasons and updates chart
+ * @param {number} startYear - Selected start year
+ * @param {number} endYear - Selected end year
+ */
+function onSliderChange(startYear, endYear) {
+    if (!appState.isLoaded) {
+        console.warn('App not fully loaded, ignoring slider change');
+        return;
+    }
 
+    console.log(`Filtering seasons: ${startYear}-${endYear}`);
+
+    // Filter seasons by selected range
+    appState.filteredSeasons = filterSeasonsByRange(appState.allSeasons, startYear, endYear);
+
+    console.log(`Filtered to ${appState.filteredSeasons.length} seasons`);
+
+    // Update chart with filtered data
+    if (appState.chart) {
+        updateChart(appState.chart, appState.filteredSeasons);
+    }
+}
+
+/**
+ * Show loading indicator
+ */
+function showLoading() {
     const loading = document.getElementById('loading');
     const appContent = document.getElementById('app-content');
 
-    try {
-        // Show loading indicator
-        if (loading) loading.style.display = 'block';
-        if (appContent) appContent.style.display = 'none';
+    if (loading) {
+        loading.style.display = 'block';
+    }
 
-        // Load data
-        console.log('Loading snowfall data...');
-        allSeasons = await loadSnowfallData();
-        console.log(`Loaded ${allSeasons.length} seasons`);
-
-        // Initialize chart with all seasons
-        console.log('Initializing chart...');
-        if (typeof initChart === 'function') {
-            currentChart = initChart('snowfall-chart', allSeasons);
-            console.log('Chart initialized successfully');
-        } else {
-            throw new Error('initChart function not available. Make sure chart-manager.js is loaded.');
-        }
-
-        // Hide loading indicator and show app
-        if (loading) loading.style.display = 'none';
-        if (appContent) appContent.style.display = 'block';
-
-        console.log('Snowfall Tracker app initialized successfully!');
-
-    } catch (error) {
-        console.error('Error initializing app:', error);
-
-        // Show error message
-        if (loading) {
-            loading.innerHTML = `
-                <div style="color: red; text-align: center;">
-                    <h3>Error Loading Application</h3>
-                    <p>${error.message}</p>
-                    <p>Please check the console for more details.</p>
-                </div>
-            `;
-        }
+    if (appContent) {
+        appContent.style.display = 'none';
     }
 }
 
-// Initialize app when DOM is loaded
+/**
+ * Hide loading indicator and show app content
+ */
+function hideLoading() {
+    const loading = document.getElementById('loading');
+    const appContent = document.getElementById('app-content');
+
+    if (loading) {
+        loading.style.display = 'none';
+    }
+
+    if (appContent) {
+        appContent.style.display = 'block';
+    }
+}
+
+/**
+ * Show error message to user
+ * @param {string} message - Error message to display
+ */
+function showError(message) {
+    const loading = document.getElementById('loading');
+
+    if (loading) {
+        loading.innerHTML = `
+            <div class="error-message">
+                <h3>Error</h3>
+                <p>${message}</p>
+                <button onclick="location.reload()" class="retry-button">Retry</button>
+            </div>
+        `;
+    }
+}
+
+/**
+ * Get current application state (for debugging)
+ * @returns {Object} Current app state
+ */
+function getAppState() {
+    return {
+        totalSeasons: appState.allSeasons.length,
+        filteredSeasons: appState.filteredSeasons.length,
+        isLoaded: appState.isLoaded,
+        hasChart: !!appState.chart
+    };
+}
+
+// Initialize application when DOM is ready
 document.addEventListener('DOMContentLoaded', init);
+
+// Export functions for testing (Node.js environment)
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = {
+        init,
+        loadSnowfallData,
+        onSliderChange,
+        showLoading,
+        hideLoading,
+        showError,
+        getAppState
+    };
+} else if (typeof window !== 'undefined') {
+    // Make functions available globally in browser
+    window.init = init;
+    window.loadSnowfallData = loadSnowfallData;
+    window.onSliderChange = onSliderChange;
+    window.showLoading = showLoading;
+    window.hideLoading = hideLoading;
+    window.showError = showError;
+    window.getAppState = getAppState;
+}

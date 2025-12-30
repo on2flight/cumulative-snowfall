@@ -60,31 +60,31 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
   - Verify color gradient and labels display correctly
   - Ask the user if questions arise
 
-- [ ] 5. Implement interactive highlighting
-  - [ ] 5.1 Add hover/tap highlighting to chart
+- [x] 5. Implement interactive highlighting
+  - [x] 5.1 Add hover/tap highlighting to chart
     - Implement highlight state management
     - Add Chart.js hover event handlers for desktop
     - Add touch event handlers for mobile tap-to-toggle
     - Style highlighted series with increased thickness
     - Dim non-highlighted series when one is selected
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5_
-  - [ ] 5.2 Write property test for highlight toggle
+  - [x] 5.2 Write property test for highlight toggle
     - **Property 6: Highlight State Toggle**
     - **Validates: Requirements 3.3, 3.4**
 
-- [ ] 6. Implement year range slider
-  - [ ] 6.1 Create slider-controller.js with range slider
+- [x] 6. Implement year range slider
+  - [x] 6.1 Create slider-controller.js with range slider
     - Implement initSlider(containerId, minYear, maxYear, onChange) function
     - Create dual-handle range slider UI
     - Display min/max year labels dynamically
     - Wire onChange callback to filter chart data
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5_
-  - [ ] 6.2 Write property test for slider bounds
+  - [x] 6.2 Write property test for slider bounds
     - **Property 7: Slider Bounds Match Data**
     - **Validates: Requirements 4.1**
 
-- [ ] 7. Implement main application
-  - [ ] 7.1 Create app.js to orchestrate components
+- [-] 7. Implement main application
+  - [x] 7.1 Create app.js to orchestrate components
     - Implement init() function as entry point
     - Load data and show loading indicator
     - Initialize slider with data bounds
@@ -92,7 +92,7 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
     - Wire slider changes to chart updates
     - Hide loading indicator when ready
     - _Requirements: 1.1, 1.6, 4.5_
-  - [ ] 7.2 Add data source attribution
+  - [-] 7.2 Add data source attribution
     - Add footer with NOAA Winter Park station attribution text
     - Include note about 1990-2025 data range
     - Ensure attribution is visible without scrolling on desktop

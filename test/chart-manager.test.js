@@ -172,6 +172,105 @@ test('Edge cases: Chart utility functions', () => {
     assert.strictEqual(formatSeasonLabel(Infinity), 'Invalid', 'Infinity input should return Invalid');
 });
 
+// Property 6: Highlight State Toggle
+// Feature: snowfall-tracker, Property 6: Highlight state toggle behavior
+test('Property 6: Highlight State Toggle - toggle behavior consistency', async () => {
+    await fc.assert(
+        fc.property(
+            // Generate number of datasets and dataset index to toggle
+            fc.integer({ min: 1, max: 10 }),
+            fc.integer({ min: 0, max: 9 }),
+            (numDatasets, datasetIndex) => {
+                // Ensure datasetIndex is within bounds
+                const validIndex = datasetIndex % numDatasets;
+
+                // Create mock chart with datasets
+                const mockChart = {
+                    data: {
+                        datasets: Array.from({ length: numDatasets }, (_, i) => ({
+                            borderWidth: 2,
+                            borderColor: `hsl(210, 70%, ${25 + (i / (numDatasets - 1)) * 40}%)`
+                        }))
+                    },
+                    update: () => { } // Mock update function
+                };
+
+                // Import the toggle function and highlight state
+                const { toggleHighlight, clearHighlight } = require('../js/chart-manager.js');
+
+                // Reset highlight state before test
+                clearHighlight(mockChart);
+
+                // Property: For any series in any highlight state, invoking the toggle function
+                // should flip the state: if highlighted, become unhighlighted; if unhighlighted, become highlighted
+
+                // First toggle - should highlight the series
+                toggleHighlight(mockChart, validIndex);
+
+                // Verify the series is highlighted (thicker border)
+                assert.strictEqual(
+                    mockChart.data.datasets[validIndex].borderWidth,
+                    4,
+                    `Dataset ${validIndex} should be highlighted with borderWidth 4 after first toggle`
+                );
+
+                // Verify other series are dimmed (if there are multiple)
+                if (numDatasets > 1) {
+                    mockChart.data.datasets.forEach((dataset, i) => {
+                        if (i !== validIndex) {
+                            assert.ok(
+                                dataset.borderColor.includes('hsla(') && dataset.borderColor.includes('0.3)'),
+                                `Dataset ${i} should be dimmed with HSLA color containing 0.3 opacity after highlighting dataset ${validIndex}, got: ${dataset.borderColor}`
+                            );
+                        }
+                    });
+                }
+
+                // Second toggle on same series - should unhighlight
+                toggleHighlight(mockChart, validIndex);
+
+                // Verify all series are back to normal state
+                mockChart.data.datasets.forEach((dataset, i) => {
+                    assert.strictEqual(
+                        dataset.borderWidth,
+                        2,
+                        `Dataset ${i} should have normal borderWidth 2 after second toggle`
+                    );
+
+                    // Color should not contain opacity (should be restored to original HSL)
+                    assert.ok(
+                        !dataset.borderColor.includes('hsla(') && !dataset.borderColor.includes('0.3)'),
+                        `Dataset ${i} should have normal HSL color after second toggle, got: ${dataset.borderColor}`
+                    );
+                });
+
+                // Test toggle on different series
+                if (numDatasets > 1) {
+                    const otherIndex = (validIndex + 1) % numDatasets;
+
+                    // Toggle different series
+                    toggleHighlight(mockChart, otherIndex);
+
+                    // Verify new series is highlighted
+                    assert.strictEqual(
+                        mockChart.data.datasets[otherIndex].borderWidth,
+                        4,
+                        `Dataset ${otherIndex} should be highlighted after toggle`
+                    );
+
+                    // Verify original series is not highlighted
+                    assert.strictEqual(
+                        mockChart.data.datasets[validIndex].borderWidth,
+                        2,
+                        `Dataset ${validIndex} should not be highlighted after toggling different series`
+                    );
+                }
+            }
+        ),
+        { numRuns: 100 }
+    );
+});
+
 // Additional property test: Color uniqueness for different season counts
 test('Property: Color uniqueness across different season counts', async () => {
     await fc.assert(
