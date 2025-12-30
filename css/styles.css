@@ -180,14 +180,72 @@ body {
     }
 }
 
-/* Touch targets for mobile */
+/* Mobile optimizations for 320px and up */
 @media (max-width: 767px) {
+    .container {
+        padding: var(--spacing-sm);
+    }
+
+    .header h1 {
+        font-size: var(--font-size-xl);
+        line-height: 1.3;
+    }
+
+    .controls {
+        margin-bottom: var(--spacing-md);
+    }
+
+    .slider-container {
+        padding: var(--spacing-md);
+    }
+
+    .chart-container {
+        padding: var(--spacing-sm);
+    }
 
     /* Ensure touch targets are at least 44px */
     button,
     input[type="range"] {
         min-height: 44px;
         min-width: 44px;
+    }
+
+    /* Reduce chart height on small screens */
+    :root {
+        --chart-height: 280px;
+    }
+
+    .footer {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+
+    .footer p {
+        margin-bottom: var(--spacing-sm);
+    }
+}
+
+/* Extra small screens (320px) */
+@media (max-width: 320px) {
+    .container {
+        padding: var(--spacing-xs);
+    }
+
+    .header h1 {
+        font-size: var(--font-size-lg);
+    }
+
+    .slider-container,
+    .chart-container {
+        padding: var(--spacing-xs);
+    }
+
+    :root {
+        --chart-height: 240px;
+    }
+
+    .footer {
+        font-size: 0.7rem;
     }
 }
 

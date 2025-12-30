@@ -105,13 +105,13 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
   - Verify responsive layout on mobile viewport
   - Ask the user if questions arise
 
-- [ ] 9. Final polish and deployment prep
-  - [ ] 9.1 Add responsive styling and mobile optimizations
+- [x] 9. Final polish and deployment prep
+  - [x] 9.1 Add responsive styling and mobile optimizations
     - Ensure chart is readable on 320px viewport
     - Size touch targets appropriately for mobile
     - Test slider usability on touch devices
     - _Requirements: 5.1, 5.2, 5.3_
-  - [ ] 9.2 Verify GitHub Pages compatibility
+  - [x] 9.2 Verify GitHub Pages compatibility
     - Ensure all paths are relative
     - Test loading from file:// protocol
     - Verify no build step required

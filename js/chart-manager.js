@@ -95,7 +95,10 @@ function initChart(canvasId, seasons) {
                     max: Math.min(365, bounds.maxDayOfSeason + 10),
                     title: {
                         display: true,
-                        text: 'Season Progress'
+                        text: 'Season Progress',
+                        font: {
+                            size: window.innerWidth < 768 ? 12 : 14
+                        }
                     },
                     ticks: {
                         callback: function (value) {
@@ -103,7 +106,11 @@ function initChart(canvasId, seasons) {
                             const monthIndex = Math.floor(value / 30.4);
                             return monthLabels[Math.min(monthIndex, 11)] || '';
                         },
-                        stepSize: 30.4 // Approximately one month
+                        stepSize: 30.4, // Approximately one month
+                        font: {
+                            size: window.innerWidth < 768 ? 10 : 12
+                        },
+                        maxTicksLimit: window.innerWidth < 480 ? 6 : 12
                     }
                 },
                 y: {
@@ -111,12 +118,19 @@ function initChart(canvasId, seasons) {
                     max: Math.max(10, Math.ceil(bounds.maxCumulative * 1.1)), // Add 10% padding, minimum 10
                     title: {
                         display: true,
-                        text: 'Cumulative Snowfall (inches)'
+                        text: window.innerWidth < 480 ? 'Snow (in)' : 'Cumulative Snowfall (inches)',
+                        font: {
+                            size: window.innerWidth < 768 ? 12 : 14
+                        }
                     },
                     ticks: {
                         callback: function (value) {
                             return value.toFixed(0) + '"';
-                        }
+                        },
+                        font: {
+                            size: window.innerWidth < 768 ? 10 : 12
+                        },
+                        maxTicksLimit: window.innerWidth < 480 ? 6 : 8
                     }
                 }
             },

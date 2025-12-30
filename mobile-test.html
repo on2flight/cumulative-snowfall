@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Test - Winter Park Snowfall</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Test viewport sizes */
+        .viewport-test {
+            border: 2px solid red;
+            margin: 10px 0;
+            padding: 10px;
+        }
+
+        .viewport-320 {
+            width: 320px;
+        }
+
+        .viewport-480 {
+            width: 480px;
+        }
+
+        .viewport-768 {
+            width: 768px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Mobile Responsiveness Test</h2>
+
+    <div class="viewport-test viewport-320">
+        <h3>320px Viewport Test</h3>
+        <div class="container">
+            <header class="header">
+                <h1>Winter Park Cumulative Snowfall</h1>
+            </header>
+            <main class="main-content">
+                <section class="controls">
+                    <div class="slider-container">
+                        <div class="year-slider">
+                            <div class="slider-header">
+                                <h3>Year Range</h3>
+                                <div class="year-display">
+                                    <span class="year-label">1990</span>
+                                    <span class="year-separator">-</span>
+                                    <span class="year-label">2024</span>
+                                </div>
+                            </div>
+                            <div class="slider-track-container">
+                                <div class="slider-track">
+                                    <div class="slider-range" style="left: 0%; width: 100%;"></div>
+                                    <div class="slider-handle" style="left: 0%;">
+                                        <div class="handle-tooltip">1990</div>
+                                    </div>
+                                    <div class="slider-handle" style="left: 100%;">
+                                        <div class="handle-tooltip">2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="chart-section">
+                    <div class="chart-container">
+                        <div
+                            style="background: #f0f0f0; height: 100%; display: flex; align-items: center; justify-content: center;">
+                            Chart Area (240px height)
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <p>Data source: NOAA Winter Park Station USC00059175</p>
+                <p>Data range: 1990-2025</p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="viewport-test viewport-480">
+        <h3>480px Viewport Test</h3>
+        <div class="container">
+            <header class="header">
+                <h1>Winter Park Cumulative Snowfall</h1>
+            </header>
+            <main class="main-content">
+                <section class="controls">
+                    <div class="slider-container">
+                        <div class="year-slider">
+                            <div class="slider-header">
+                                <h3>Year Range</h3>
+                                <div class="year-display">
+                                    <span class="year-label">1990</span>
+                                    <span class="year-separator">-</span>
+                                    <span class="year-label">2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="chart-section">
+                    <div class="chart-container">
+                        <div
+                            style="background: #f0f0f0; height: 100%; display: flex; align-items: center; justify-content: center;">
+                            Chart Area (280px height)
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
