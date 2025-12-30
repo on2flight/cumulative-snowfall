@@ -1,0 +1,22 @@
+{
+    "name": "snowfall-tracker",
+    "version": "1.0.0",
+    "description": "Winter Park cumulative snowfall visualization",
+    "main": "js/app.js",
+    "scripts": {
+        "test": "node --test test/*.test.js",
+        "test:watch": "node --test --watch test/*.test.js",
+        "generate-data": "node scripts/fetch-snotel-data.js"
+    },
+    "devDependencies": {
+        "fast-check": "^3.15.0"
+    },
+    "keywords": [
+        "snowfall",
+        "visualization",
+        "winter-park",
+        "snotel"
+    ],
+    "author": "",
+    "license": "MIT"
+}

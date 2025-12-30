@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Park Snowfall Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Winter Park Cumulative Snowfall</h1>
+        </header>
+
+        <main class="main-content">
+            <div class="loading-indicator" id="loading">
+                <div class="spinner"></div>
+                <p>Loading snowfall data...</p>
+            </div>
+
+            <div class="app-content" id="app-content" style="display: none;">
+                <section class="controls">
+                    <div class="slider-container" id="year-slider-container">
+                        <!-- Year range slider will be inserted here -->
+                    </div>
+                </section>
+
+                <section class="chart-section">
+                    <div class="chart-container">
+                        <canvas id="snowfall-chart"></canvas>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Data source: SNOTEL Berthoud Summit Station #335 (11,300 ft elevation)</p>
+            <p>Methodology: Daily snowfall calculated from snow depth changes. Negative changes (settling/melt) recorded
+                as zero snowfall.</p>
+        </footer>
+    </div>
+
+    <script src="js/data-processor.js"></script>
+    <script src="js/chart-manager.js"></script>
+    <script src="js/slider-controller.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
