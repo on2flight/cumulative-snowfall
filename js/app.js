@@ -62,7 +62,20 @@ async function init() {
  */
 async function loadSnowfallData() {
     try {
-        const response = await fetch('data/snowfall-data.json');
+        // Build a data URL that works both on GitHub Pages and when loaded without a trailing slash
+        // Example: https://example.github.io/repo (no slash) should still resolve to
+        // https://example.github.io/repo/data/snowfall-data.json instead of https://example.github.io/data/...
+        let dataUrl = 'data/snowfall-data.json';
+
+        if (typeof window !== 'undefined' && window.location) {
+            const { origin, pathname } = window.location;
+            const normalizedPath = pathname.endsWith('/') ? pathname : `${pathname}/`;
+            const baseHref = `${origin}${normalizedPath}`;
+
+            dataUrl = new URL('data/snowfall-data.json', baseHref);
+        }
+
+        const response = await fetch(dataUrl);
 
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
