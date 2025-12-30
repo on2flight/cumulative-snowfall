@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Test</title>
+</head>
+
+<body>
+    <div id="debug-output"></div>
+
+    <script>
+        async function debugTest() {
+            const output = document.getElementById('debug-output');
+
+            try {
+                output.innerHTML += '<p>Testing data fetch...</p>';
+
+                const response = await fetch('data/snowfall-data.json');
+                output.innerHTML += `<p>Response status: ${response.status}</p>`;
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                output.innerHTML += `<p>Data loaded successfully!</p>`;
+                output.innerHTML += `<p>Source: ${data.source}</p>`;
+                output.innerHTML += `<p>Seasons count: ${data.seasons ? data.seasons.length : 'undefined'}</p>`;
+
+                if (data.seasons && data.seasons.length > 0) {
+                    output.innerHTML += `<p>First season: ${data.seasons[0].season}</p>`;
+                }
+
+            } catch (error) {
+                output.innerHTML += `<p style="color: red;">Error: ${error.message}</p>`;
+                console.error('Debug test error:', error);
+            }
+        }
+
+        // Run test when page loads
+        document.addEventListener('DOMContentLoaded', debugTest);
+    </script>
+</body>
+
+</html>

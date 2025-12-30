@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+</head>
+
+<body>
+    <div id="test-output"></div>
+
+    <script src="js/data-processor.js"></script>
+    <script src="js/chart-manager.js"></script>
+    <script src="js/slider-controller.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const output = document.getElementById('test-output');
+
+            // Test if Chart.js is available
+            output.innerHTML += `<p>Chart.js available: ${typeof Chart !== 'undefined'}</p>`;
+
+            // Test if data processor functions are available
+            output.innerHTML += `<p>getAxisBounds available: ${typeof getAxisBounds !== 'undefined'}</p>`;
+            output.innerHTML += `<p>filterSeasonsByRange available: ${typeof filterSeasonsByRange !== 'undefined'}</p>`;
+
+            // Test if chart manager functions are available
+            output.innerHTML += `<p>initChart available: ${typeof initChart !== 'undefined'}</p>`;
+            output.innerHTML += `<p>getSeasonColor available: ${typeof getSeasonColor !== 'undefined'}</p>`;
+
+            // Test if slider functions are available
+            output.innerHTML += `<p>initSlider available: ${typeof initSlider !== 'undefined'}</p>`;
+
+            // Test if app functions are available
+            output.innerHTML += `<p>init available: ${typeof init !== 'undefined'}</p>`;
+            output.innerHTML += `<p>loadSnowfallData available: ${typeof loadSnowfallData !== 'undefined'}</p>`;
+
+            // Test a simple data fetch
+            loadSnowfallData().then(data => {
+                output.innerHTML += `<p>Data fetch test: SUCCESS - ${data.seasons.length} seasons</p>`;
+            }).catch(error => {
+                output.innerHTML += `<p style="color: red;">Data fetch test: FAILED - ${error.message}</p>`;
+            });
+        });
+    </script>
+</body>
+
+</html>

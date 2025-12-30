@@ -98,7 +98,7 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
     - Ensure attribution is visible without scrolling on desktop
     - _Requirements: 7.1, 7.2, 7.3_
 
-- [ ] 8. Checkpoint - Full integration test
+- [x] 8. Checkpoint - Full integration test
   - Ensure all components work together
   - Test slider filtering updates chart
   - Test hover/tap highlighting

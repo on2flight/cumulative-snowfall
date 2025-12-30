@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Fix</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+</head>
+
+<body>
+    <div id="output"></div>
+    <canvas id="test-chart" width="400" height="200"></canvas>
+
+    <script src="js/data-processor.js?v=2"></script>
+    <script src="js/chart-manager.js?v=2"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            const output = document.getElementById('output');
+
+            try {
+                output.innerHTML += '<p>Testing fix...</p>';
+
+                // Load data
+                const response = await fetch('data/snowfall-data.json');
+                const data = await response.json();
+
+                // Test with seasons that might have zero snowfall
+                const testSeasons = data.seasons.slice(0, 3);
+                output.innerHTML += `<p>Testing with ${testSeasons.length} seasons</p>`;
+
+                // Test axis bounds
+                const bounds = getAxisBounds(testSeasons);
+                output.innerHTML += `<p>Bounds: min=${bounds.minDayOfSeason}, max=${bounds.maxDayOfSeason}, maxCum=${bounds.maxCumulative}</p>`;
+
+                // Test chart creation
+                const chart = initChart('test-chart', testSeasons);
+                output.innerHTML += '<p>✅ Chart created successfully!</p>';
+
+                // Test the Y-axis max value
+                const yMax = chart.options.scales.y.max;
+                output.innerHTML += `<p>Y-axis max: ${yMax} (should be at least 10)</p>`;
+
+                if (yMax >= 10) {
+                    output.innerHTML += '<p>✅ Y-axis fix working correctly!</p>';
+                } else {
+                    output.innerHTML += '<p>❌ Y-axis fix not working</p>';
+                }
+
+            } catch (error) {
+                output.innerHTML += `<p style="color: red;">❌ Error: ${error.message}</p>`;
+                console.error('Test error:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>

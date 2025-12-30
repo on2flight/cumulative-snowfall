@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+</head>
+
+<body>
+    <div id="output"></div>
+    <canvas id="test-chart" width="400" height="200"></canvas>
+
+    <script src="js/data-processor.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function () {
+            const output = document.getElementById('output');
+
+            try {
+                output.innerHTML += '<p>Starting minimal test...</p>';
+
+                // Test 1: Check if Chart.js is available
+                if (typeof Chart === 'undefined') {
+                    throw new Error('Chart.js not available');
+                }
+                output.innerHTML += '<p>✅ Chart.js is available</p>';
+
+                // Test 2: Check if data processor functions are available
+                if (typeof getAxisBounds === 'undefined') {
+                    throw new Error('getAxisBounds not available');
+                }
+                output.innerHTML += '<p>✅ getAxisBounds is available</p>';
+
+                // Test 3: Load data
+                const response = await fetch('data/snowfall-data.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                const data = await response.json();
+                output.innerHTML += '<p>✅ Data loaded successfully</p>';
+
+                // Test 4: Test getAxisBounds with real data
+                const bounds = getAxisBounds(data.seasons.slice(0, 5)); // Test with first 5 seasons
+                output.innerHTML += `<p>✅ Axis bounds: min=${bounds.minDayOfSeason}, max=${bounds.maxDayOfSeason}, maxCum=${bounds.maxCumulative}</p>`;
+
+                // Test 5: Try to create a simple chart
+                const canvas = document.getElementById('test-chart');
+                const ctx = canvas.getContext('2d');
+
+                const chart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        datasets: [{
+                            label: 'Test',
+                            data: [{ x: 0, y: 0 }, { x: 100, y: 50 }],
+                            borderColor: 'blue'
+                        }]
+                    },
+                    options: {
+                        responsive: false,
+                        scales: {
+                            x: { type: 'linear' },
+                            y: { beginAtZero: true }
+                        }
+                    }
+                });
+
+                output.innerHTML += '<p>✅ Chart created successfully</p>';
+
+            } catch (error) {
+                output.innerHTML += `<p style="color: red;">❌ Error: ${error.message}</p>`;
+                console.error('Minimal test error:', error);
+            }
+        });
+    </script>
+</body>
+
+</html>

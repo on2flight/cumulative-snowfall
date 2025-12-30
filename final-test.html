@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Integration Test</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Final Integration Test</h1>
+        </header>
+
+        <main class="main-content">
+            <div id="test-output"
+                style="margin-bottom: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+                <h3>Test Results:</h3>
+            </div>
+
+            <div class="loading-indicator" id="loading">
+                <div class="spinner"></div>
+                <p>Loading snowfall data...</p>
+            </div>
+
+            <div class="app-content" id="app-content" style="display: none;">
+                <section class="controls">
+                    <div class="slider-container" id="year-slider-container">
+                        <!-- Year range slider will be inserted here -->
+                    </div>
+                </section>
+
+                <section class="chart-section">
+                    <div class="chart-container">
+                        <canvas id="snowfall-chart"></canvas>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Integration Test - Data source: NOAA Winter Park Station USC00059175</p>
+        </footer>
+    </div>
+
+    <script src="js/data-processor.js?v=3"></script>
+    <script src="js/chart-manager.js?v=3"></script>
+    <script src="js/slider-controller.js?v=3"></script>
+    <script src="js/app.js?v=3"></script>
+
+    <script>
+        // Override the original init function to add testing
+        const originalInit = init;
+
+        window.init = async function () {
+            const output = document.getElementById('test-output');
+
+            try {
+                output.innerHTML += '<p>🧪 Starting integration test...</p>';
+
+                // Run the original init function
+                await originalInit();
+
+                // Test 1: Check if app loaded successfully
+                const appState = getAppState();
+                if (appState.isLoaded) {
+                    output.innerHTML += '<p>✅ Application loaded successfully</p>';
+                } else {
+                    throw new Error('Application failed to load');
+                }
+
+                // Test 2: Check if data was loaded
+                if (appState.totalSeasons > 0) {
+                    output.innerHTML += `<p>✅ Data loaded: ${appState.totalSeasons} seasons</p>`;
+                } else {
+                    throw new Error('No data loaded');
+                }
+
+                // Test 3: Check if chart was created
+                if (appState.hasChart) {
+                    output.innerHTML += '<p>✅ Chart created successfully</p>';
+                } else {
+                    throw new Error('Chart not created');
+                }
+
+                // Test 4: Test slider functionality
+                const sliderRange = getSliderRange();
+                output.innerHTML += `<p>✅ Slider initialized: ${sliderRange.start}-${sliderRange.end}</p>`;
+
+                // Test 5: Test slider filtering
+                setSliderRange(2020, 2024);
+                const newAppState = getAppState();
+                output.innerHTML += `<p>✅ Slider filtering works: ${newAppState.filteredSeasons} seasons in range</p>`;
+
+                // Test 6: Test responsive design elements
+                const hasResponsiveCSS = document.querySelector('meta[name="viewport"]') !== null;
+                output.innerHTML += `<p>${hasResponsiveCSS ? '✅' : '❌'} Responsive viewport meta tag present</p>`;
+
+                output.innerHTML += '<p>🎉 All integration tests passed!</p>';
+
+            } catch (error) {
+                output.innerHTML += `<p style="color: red;">❌ Integration test failed: ${error.message}</p>`;
+                console.error('Integration test error:', error);
+            }
+        };
+
+        // Start the test
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+
+</html>

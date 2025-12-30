@@ -23,12 +23,19 @@ function initChart(canvasId, seasons) {
         const label = formatSeasonLabel(season.startYear);
 
         // Convert daily data to chart points
-        const data = season.dailyData
-            .filter(record => record.cumulativeSnowfall > 0 || record.dailySnowfall > 0)
-            .map(record => ({
-                x: record.dayOfSeason,
-                y: record.cumulativeSnowfall
-            }));
+        // Include all records, but ensure we have at least start and end points
+        let data = season.dailyData.map(record => ({
+            x: record.dayOfSeason,
+            y: record.cumulativeSnowfall
+        }));
+
+        // If no data or all zeros, create minimal dataset with start/end points
+        if (data.length === 0 || data.every(point => point.y === 0)) {
+            data = [
+                { x: 0, y: 0 },    // Season start
+                { x: 365, y: 0 }   // Season end
+            ];
+        }
 
         return {
             label: label,
@@ -101,7 +108,7 @@ function initChart(canvasId, seasons) {
                 },
                 y: {
                     beginAtZero: true,
-                    max: Math.ceil(bounds.maxCumulative * 1.1), // Add 10% padding
+                    max: Math.max(10, Math.ceil(bounds.maxCumulative * 1.1)), // Add 10% padding, minimum 10
                     title: {
                         display: true,
                         text: 'Cumulative Snowfall (inches)'
@@ -154,12 +161,19 @@ function updateChart(chart, seasons) {
         const label = formatSeasonLabel(season.startYear);
 
         // Convert daily data to chart points
-        const data = season.dailyData
-            .filter(record => record.cumulativeSnowfall > 0 || record.dailySnowfall > 0)
-            .map(record => ({
-                x: record.dayOfSeason,
-                y: record.cumulativeSnowfall
-            }));
+        // Include all records, but ensure we have at least start and end points
+        let data = season.dailyData.map(record => ({
+            x: record.dayOfSeason,
+            y: record.cumulativeSnowfall
+        }));
+
+        // If no data or all zeros, create minimal dataset with start/end points
+        if (data.length === 0 || data.every(point => point.y === 0)) {
+            data = [
+                { x: 0, y: 0 },    // Season start
+                { x: 365, y: 0 }   // Season end
+            ];
+        }
 
         return {
             label: label,
@@ -177,7 +191,7 @@ function updateChart(chart, seasons) {
     // Update axis bounds
     chart.options.scales.x.min = Math.max(0, bounds.minDayOfSeason - 10);
     chart.options.scales.x.max = Math.min(365, bounds.maxDayOfSeason + 10);
-    chart.options.scales.y.max = Math.ceil(bounds.maxCumulative * 1.1);
+    chart.options.scales.y.max = Math.max(10, Math.ceil(bounds.maxCumulative * 1.1));
 
     // Clear any existing highlight state
     clearHighlight(chart);
