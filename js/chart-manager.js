@@ -303,4 +303,14 @@ if (typeof module !== 'undefined' && module.exports) {
         toggleHighlight,
         addSeasonLabels
     };
+} else if (typeof window !== 'undefined') {
+    // Make functions available globally in browser
+    window.initChart = initChart;
+    window.updateChart = updateChart;
+    window.getSeasonColor = getSeasonColor;
+    window.formatSeasonLabel = formatSeasonLabel;
+    window.highlightSeries = highlightSeries;
+    window.clearHighlight = clearHighlight;
+    window.toggleHighlight = toggleHighlight;
+    window.addSeasonLabels = addSeasonLabels;
 }

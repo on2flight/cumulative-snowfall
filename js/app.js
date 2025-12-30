@@ -38,8 +38,12 @@ async function init() {
 
         // Initialize chart with all seasons
         console.log('Initializing chart...');
-        currentChart = initChart('snowfall-chart', allSeasons);
-        console.log('Chart initialized successfully');
+        if (typeof initChart === 'function') {
+            currentChart = initChart('snowfall-chart', allSeasons);
+            console.log('Chart initialized successfully');
+        } else {
+            throw new Error('initChart function not available. Make sure chart-manager.js is loaded.');
+        }
 
         // Hide loading indicator and show app
         if (loading) loading.style.display = 'none';

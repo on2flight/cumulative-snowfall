@@ -132,4 +132,10 @@ if (typeof module !== 'undefined' && module.exports) {
         filterSeasonsByRange,
         getAxisBounds
     };
+} else if (typeof window !== 'undefined') {
+    // Make functions available globally in browser
+    window.calculateDailySnowfall = calculateDailySnowfall;
+    window.calculateCumulative = calculateCumulative;
+    window.filterSeasonsByRange = filterSeasonsByRange;
+    window.getAxisBounds = getAxisBounds;
 }
