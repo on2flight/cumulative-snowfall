@@ -2,7 +2,7 @@
 
 ## Overview
 
-Build a single-page web application displaying cumulative seasonal snowfall for Winter Park, CO. The implementation follows a modular approach with vanilla JavaScript and Chart.js, designed for static hosting on GitHub Pages.
+Build a single-page web application displaying cumulative seasonal snowfall for Winter Park, CO. The implementation follows a modular approach with vanilla JavaScript and Chart.js, designed for static hosting on GitHub Pages. Uses real NOAA weather station data from Winter Park (USC00059175) spanning 1990-2025.
 
 ## Tasks
 
@@ -12,24 +12,25 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
     - Create styles.css with CSS custom properties for theming
     - Set up responsive layout with mobile-first approach
     - _Requirements: 5.1, 6.1, 6.4_
-  - [x] 1.2 Fetch and process SNOTEL data into static JSON file
-    - Download historical data from SNOTEL Berthoud Summit (station 335)
-    - Process raw data to calculate daily snowfall from snow depth changes
-    - Calculate cumulative snowfall for each season
+  - [x] 1.2 Process NOAA data into static JSON file
+    - Process NOAA GHCND data from Winter Park station (USC00059175)
+    - Extract daily snowfall measurements (SNOW column) and snow depth (SNWD column)
+    - Handle missing values and trace amounts appropriately
+    - Calculate cumulative snowfall for each season (1990-2025)
     - Save as data/snowfall-data.json
-    - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5_
-  - [x] 1.3 Write property tests for snowfall calculations
-    - **Property 1: Daily Snowfall Calculation**
+    - _Requirements: 1.1, 1.2, 1.3, 1.4_
+  - [x] 1.3 Write property tests for snowfall processing
+    - **Property 1: Daily Snowfall Processing**
     - **Property 2: Cumulative Snowfall Consistency**
-    - **Validates: Requirements 1.3, 1.4, 1.5**
+    - **Validates: Requirements 1.3, 1.4**
 
 - [x] 2. Implement data processing module
-  - [x] 2.1 Create data-processor.js with calculation functions
-    - Implement calculateDailySnowfall(depths) function
+  - [x] 2.1 Create data-processor.js with processing functions
+    - Implement processDailySnowfall(snowfallValues) function
     - Implement calculateCumulative(dailyValues) function
     - Implement filterSeasonsByRange(seasons, startYear, endYear) function
     - Implement getAxisBounds(seasons) function
-    - _Requirements: 1.3, 1.5, 2.4, 2.5, 4.3_
+    - _Requirements: 1.3, 1.4, 2.4, 2.5, 4.3_
   - [x] 2.2 Write property tests for data processor
     - **Property 3: Axis Bounds Encompass Data**
     - **Property 8: Season Filtering by Range**
@@ -92,8 +93,8 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
     - Hide loading indicator when ready
     - _Requirements: 1.1, 1.6, 4.5_
   - [ ] 7.2 Add data source attribution
-    - Add footer with SNOTEL attribution text
-    - Include methodology note about snow depth calculation
+    - Add footer with NOAA Winter Park station attribution text
+    - Include note about 1990-2025 data range
     - Ensure attribution is visible without scrolling on desktop
     - _Requirements: 7.1, 7.2, 7.3_
 
@@ -121,4 +122,4 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
 - All tasks including property tests are required
 - Property tests use fast-check library for JavaScript
 - Each property test should run minimum 100 iterations
-- SNOTEL data processing (task 1.2) may require a one-time Node.js script to fetch and transform data
+- NOAA data processing (task 1.2) requires processing the USC00059175data.csv file to extract and transform snowfall data

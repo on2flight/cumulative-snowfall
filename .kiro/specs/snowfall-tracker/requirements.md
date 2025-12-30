@@ -2,15 +2,16 @@
 
 ## Introduction
 
-A lightweight, single-page web application that visualizes cumulative seasonal snowfall at Winter Park Resort, CO, allowing users to compare year-over-year snowfall patterns. The application displays overlaid line charts for multiple seasons, with interactive features for exploring the data. This v0 uses SNOTEL (Berthoud Summit) data as a proof of concept, with architecture designed to support OnTheSnow API integration in a future version.
+A lightweight, single-page web application that visualizes cumulative seasonal snowfall at Winter Park Resort, CO, allowing users to compare year-over-year snowfall patterns. The application displays overlaid line charts for multiple seasons, with interactive features for exploring the data. This application uses historical NOAA weather station data from Winter Park (USC00059175) spanning 1990-2025, providing 35+ years of real snowfall measurements.
 
 ## Glossary
 
 - **Season**: A ski season defined as August 1 through July 31 of the following year (e.g., "2023-24" runs Aug 1, 2023 to Jul 31, 2024)
 - **Cumulative_Snowfall**: Running total of daily snowfall amounts from the start of the season
-- **Daily_Snowfall**: Calculated as the positive change in snow depth from one day to the next (negative changes indicate settling/melt, not snowfall)
-- **SNOTEL**: Snow Telemetry - automated stations operated by USDA NRCS that measure snow depth, precipitation, and temperature
-- **Berthoud_Summit_Station**: SNOTEL station #335, located at 11,300 ft elevation near Winter Park Resort
+- **Daily_Snowfall**: Daily snowfall amount as measured by NOAA weather station (SNOW column in GHCND data)
+- **Snow_Depth**: Total depth of snow on ground as measured by NOAA weather station (SNWD column in GHCND data)
+- **NOAA_Station_USC00059175**: Winter Park weather station operated by NOAA, providing daily climate data including snowfall and snow depth measurements
+- **GHCND**: Global Historical Climatology Network Daily - NOAA's database of daily weather observations from stations worldwide
 - **Data_Series**: A single season's cumulative snowfall line on the chart
 - **Chart_Component**: The interactive visualization displaying overlaid seasonal data
 - **Year_Range_Slider**: Dual-handle slider for filtering which seasons to display
@@ -19,16 +20,15 @@ A lightweight, single-page web application that visualizes cumulative seasonal s
 
 ### Requirement 1: Data Loading
 
-**User Story:** As a user, I want the application to load historical snowfall data for Winter Park area, so that I can view and compare seasonal snowfall patterns.
+**User Story:** As a user, I want the application to load historical snowfall data for Winter Park, so that I can view and compare seasonal snowfall patterns.
 
 #### Acceptance Criteria
 
 1. WHEN the application loads, THE application SHALL load pre-bundled historical snowfall data from a static JSON file
-2. THE application SHALL include data from at least the 2014-15 season through the current season
-3. THE application SHALL calculate daily snowfall as the positive difference in snow depth between consecutive days
-4. WHEN snow depth decreases between days, THE application SHALL record zero snowfall for that day (settling/melt)
-5. THE application SHALL calculate cumulative snowfall for each season by summing daily snowfall values
-6. WHEN data is being loaded, THE application SHALL display a loading indicator
+2. THE application SHALL include data from at least the 1990-91 season through the current season
+3. THE application SHALL use daily snowfall measurements from NOAA station USC00059175 (Winter Park, CO)
+4. THE application SHALL calculate cumulative snowfall for each season by summing daily snowfall values
+5. WHEN data is being loaded, THE application SHALL display a loading indicator
 
 ### Requirement 2: Chart Display
 
@@ -95,6 +95,6 @@ A lightweight, single-page web application that visualizes cumulative seasonal s
 
 #### Acceptance Criteria
 
-1. THE application SHALL display attribution text indicating the data source (SNOTEL Berthoud Summit station)
-2. THE application SHALL include a note that snowfall is calculated from snow depth changes
+1. THE application SHALL display attribution text indicating the data source (NOAA Winter Park station USC00059175)
+2. THE application SHALL include a note that data spans from 1990 to present
 3. THE attribution SHALL be visible without requiring user interaction

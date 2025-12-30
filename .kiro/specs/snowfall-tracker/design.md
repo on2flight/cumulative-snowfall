@@ -2,14 +2,14 @@
 
 ## Overview
 
-A single-page web application that visualizes cumulative seasonal snowfall for Winter Park, CO using SNOTEL data. The app displays overlaid line charts comparing multiple ski seasons, with interactive highlighting and year range filtering. Built as a static site for GitHub Pages hosting.
+A single-page web application that visualizes cumulative seasonal snowfall for Winter Park, CO using NOAA weather station data. The app displays overlaid line charts comparing multiple ski seasons, with interactive highlighting and year range filtering. Built as a static site for GitHub Pages hosting.
 
 ### Technology Stack
 
 - **Frontend**: Vanilla JavaScript (no framework)
 - **Charting**: Chart.js v4 (lightweight, interactive, mobile-friendly)
 - **Styling**: CSS3 with CSS custom properties for theming
-- **Data**: Pre-bundled JSON file with processed SNOTEL data
+- **Data**: Pre-bundled JSON file with processed NOAA GHCND data
 - **Hosting**: GitHub Pages (static files only)
 
 ### Design Rationale
@@ -17,6 +17,7 @@ A single-page web application that visualizes cumulative seasonal snowfall for W
 - **Vanilla JS over React/Vue**: Simpler deployment, no build step, smaller bundle size
 - **Chart.js over D3**: Easier to implement interactive line charts with hover/touch events
 - **Static JSON over live API**: Faster load times, no CORS issues, works offline
+- **NOAA data over SNOTEL**: Direct Winter Park measurements, 35+ year history, real data
 
 ## Architecture
 
@@ -74,12 +75,12 @@ interface DailyRecord {
 
 ### 2. Data Processor Module (`data-processor.js`)
 
-Transforms raw SNOTEL data into chart-ready format.
+Transforms raw NOAA GHCND data into chart-ready format.
 
 ```javascript
-// Calculate daily snowfall from snow depth changes
-function calculateDailySnowfall(depths: number[]): number[]
-// Rule: snowfall[i] = max(0, depth[i] - depth[i-1])
+// Process NOAA daily snowfall data (already measured, no calculation needed)
+function processDailySnowfall(snowfallValues: number[]): number[]
+// Rule: Use SNOW column values directly, handle missing/trace values
 
 // Calculate cumulative snowfall
 function calculateCumulative(dailyValues: number[]): number[]
@@ -166,18 +167,19 @@ async function init(): void {
 
 ```json
 {
-  "source": "SNOTEL Berthoud Summit (Station 335)",
-  "elevation": 11300,
+  "source": "NOAA Winter Park Station (USC00059175)",
+  "elevation": 9100,
   "units": "inches",
-  "lastUpdated": "2024-12-29",
+  "lastUpdated": "2025-12-30",
+  "dataRange": "1990-2025",
   "seasons": [
     {
-      "season": "2023-24",
-      "startYear": 2023,
-      "totalSnowfall": 385.2,
+      "season": "2024-25",
+      "startYear": 2024,
+      "totalSnowfall": 45.2,
       "dailyData": [
         {
-          "date": "2023-10-15",
+          "date": "2024-10-15",
           "dayOfSeason": 75,
           "snowDepth": 12,
           "dailySnowfall": 5,
@@ -219,17 +221,17 @@ async function init(): void {
 
 *A property is a characteristic or behavior that should hold true across all valid executions of a system—essentially, a formal statement about what the system should do. Properties serve as the bridge between human-readable specifications and machine-verifiable correctness guarantees.*
 
-### Property 1: Daily Snowfall Calculation
+### Property 1: Daily Snowfall Processing
 
-*For any* sequence of consecutive snow depth measurements, the calculated daily snowfall for day N should equal max(0, depth[N] - depth[N-1]). Negative depth changes (settling/melt) should always produce zero snowfall.
+*For any* sequence of NOAA daily snowfall measurements, the processed daily snowfall values should preserve the original measurements while handling missing values (null/undefined) and trace amounts ("T") appropriately by converting them to 0.
 
-**Validates: Requirements 1.3, 1.4**
+**Validates: Requirements 1.3**
 
 ### Property 2: Cumulative Snowfall Consistency
 
 *For any* season's daily snowfall array, the cumulative snowfall value at index N should equal the sum of all daily snowfall values from index 0 through N.
 
-**Validates: Requirements 1.5**
+**Validates: Requirements 1.4**
 
 ### Property 3: Axis Bounds Encompass Data
 
@@ -257,7 +259,7 @@ async function init(): void {
 
 ### Property 7: Slider Bounds Match Data
 
-*For any* loaded dataset, the slider's minimum value should equal the earliest season's start year, and the maximum value should equal the most recent season's start year.
+*For any* loaded dataset, the slider's minimum value should equal the earliest season's start year (1990), and the maximum value should equal the most recent season's start year.
 
 **Validates: Requirements 4.1**
 
