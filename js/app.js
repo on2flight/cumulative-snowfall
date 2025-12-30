@@ -69,13 +69,10 @@ async function loadSnowfallData() {
 
         if (typeof window !== 'undefined' && window.location) {
             const { origin, pathname } = window.location;
+            const normalizedPath = pathname.endsWith('/') ? pathname : `${pathname}/`;
+            const baseHref = `${origin}${normalizedPath}`;
 
-            // Strip the filename (e.g., index.html) if present so we always resolve from the directory root.
-            const basePath = pathname.endsWith('/')
-                ? pathname
-                : pathname.substring(0, pathname.lastIndexOf('/') + 1);
-
-            dataUrl = new URL('data/snowfall-data.json', `${origin}${basePath}`).toString();
+            dataUrl = new URL('data/snowfall-data.json', baseHref);
         }
 
         const response = await fetch(dataUrl);
