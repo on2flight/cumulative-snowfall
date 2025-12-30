@@ -119,7 +119,7 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
 
 ## Notes
 
-- All tasks including property tests are required
+- All tasks including property tests are required for comprehensive development
 - Property tests use fast-check library for JavaScript
 - Each property test should run minimum 100 iterations
 - NOAA data processing (task 1.2) requires processing the USC00059175data.csv file to extract and transform snowfall data
