@@ -54,7 +54,7 @@ Build a single-page web application displaying cumulative seasonal snowfall for 
     - **Property 5: Season Label Format**
     - **Validates: Requirements 2.6, 2.7**
 
-- [ ] 4. Checkpoint - Verify core visualization
+- [x] 4. Checkpoint - Verify core visualization
   - Ensure chart renders with sample data
   - Verify color gradient and labels display correctly
   - Ask the user if questions arise
