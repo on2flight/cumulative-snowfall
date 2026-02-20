@@ -2,231 +2,2569 @@
   "source": "NOAA Winter Park Station (USC00059175)",
   "elevation": 9100,
   "units": "inches",
-  "lastUpdated": "2025-12-30",
-  "dataRange": "1989-2025",
+  "lastUpdated": "2026-02-20",
+  "dataRange": "1989-2026",
   "note": "Processed from NOAA Global Historical Climatology Network Daily (GHCND) data. Daily snowfall from SNOW column, snow depth from SNWD column.",
   "seasons": [
     {
       "season": "1989-90",
       "startYear": 1989,
-      "totalSnowfall": 0,
+      "totalSnowfall": 180.8,
       "dailyData": [
+        {
+          "date": "1989-08-01",
+          "dayOfSeason": 0,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-02",
+          "dayOfSeason": 1,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-03",
+          "dayOfSeason": 2,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-04",
+          "dayOfSeason": 3,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-05",
+          "dayOfSeason": 4,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-06",
+          "dayOfSeason": 5,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-07",
+          "dayOfSeason": 6,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-08",
+          "dayOfSeason": 7,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-09",
+          "dayOfSeason": 8,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-10",
+          "dayOfSeason": 9,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-11",
+          "dayOfSeason": 10,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-12",
+          "dayOfSeason": 11,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-13",
+          "dayOfSeason": 12,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-14",
+          "dayOfSeason": 13,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-15",
+          "dayOfSeason": 14,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-16",
+          "dayOfSeason": 15,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-17",
+          "dayOfSeason": 16,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-18",
+          "dayOfSeason": 17,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-19",
+          "dayOfSeason": 18,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-20",
+          "dayOfSeason": 19,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-21",
+          "dayOfSeason": 20,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-22",
+          "dayOfSeason": 21,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-23",
+          "dayOfSeason": 22,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-24",
+          "dayOfSeason": 23,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-25",
+          "dayOfSeason": 24,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-26",
+          "dayOfSeason": 25,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-27",
+          "dayOfSeason": 26,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-28",
+          "dayOfSeason": 27,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-29",
+          "dayOfSeason": 28,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-30",
+          "dayOfSeason": 29,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-08-31",
+          "dayOfSeason": 30,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-01",
+          "dayOfSeason": 31,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-02",
+          "dayOfSeason": 32,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-03",
+          "dayOfSeason": 33,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-04",
+          "dayOfSeason": 34,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-05",
+          "dayOfSeason": 35,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-06",
+          "dayOfSeason": 36,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-07",
+          "dayOfSeason": 37,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-08",
+          "dayOfSeason": 38,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-09",
+          "dayOfSeason": 39,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-10",
+          "dayOfSeason": 40,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-11",
+          "dayOfSeason": 41,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-12",
+          "dayOfSeason": 42,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-13",
+          "dayOfSeason": 43,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-14",
+          "dayOfSeason": 44,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-15",
+          "dayOfSeason": 45,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-16",
+          "dayOfSeason": 46,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-17",
+          "dayOfSeason": 47,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-18",
+          "dayOfSeason": 48,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-19",
+          "dayOfSeason": 49,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-20",
+          "dayOfSeason": 50,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-21",
+          "dayOfSeason": 51,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-22",
+          "dayOfSeason": 52,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-23",
+          "dayOfSeason": 53,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-24",
+          "dayOfSeason": 54,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-25",
+          "dayOfSeason": 55,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-26",
+          "dayOfSeason": 56,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-27",
+          "dayOfSeason": 57,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-28",
+          "dayOfSeason": 58,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-29",
+          "dayOfSeason": 59,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-09-30",
+          "dayOfSeason": 60,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-01",
+          "dayOfSeason": 61,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-02",
+          "dayOfSeason": 62,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-03",
+          "dayOfSeason": 63,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-04",
+          "dayOfSeason": 64,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-05",
+          "dayOfSeason": 65,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-06",
+          "dayOfSeason": 66,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-07",
+          "dayOfSeason": 67,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-08",
+          "dayOfSeason": 68,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-09",
+          "dayOfSeason": 69,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-10",
+          "dayOfSeason": 70,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-11",
+          "dayOfSeason": 71,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-12",
+          "dayOfSeason": 72,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-13",
+          "dayOfSeason": 73,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-14",
+          "dayOfSeason": 74,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-15",
+          "dayOfSeason": 75,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "1989-10-16",
+          "dayOfSeason": 76,
+          "snowDepth": 1,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 1
+        },
+        {
+          "date": "1989-10-17",
+          "dayOfSeason": 77,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 1
+        },
+        {
+          "date": "1989-10-18",
+          "dayOfSeason": 78,
+          "snowDepth": 1,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 2
+        },
+        {
+          "date": "1989-10-19",
+          "dayOfSeason": 79,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 2
+        },
+        {
+          "date": "1989-10-20",
+          "dayOfSeason": 80,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 2
+        },
+        {
+          "date": "1989-10-21",
+          "dayOfSeason": 81,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 2
+        },
+        {
+          "date": "1989-10-22",
+          "dayOfSeason": 82,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 2
+        },
+        {
+          "date": "1989-10-23",
+          "dayOfSeason": 83,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 2
+        },
+        {
+          "date": "1989-10-24",
+          "dayOfSeason": 84,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 2
+        },
+        {
+          "date": "1989-10-25",
+          "dayOfSeason": 85,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 2
+        },
+        {
+          "date": "1989-10-26",
+          "dayOfSeason": 86,
+          "snowDepth": 2,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 4
+        },
+        {
+          "date": "1989-10-27",
+          "dayOfSeason": 87,
+          "snowDepth": 2,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 4
+        },
+        {
+          "date": "1989-10-28",
+          "dayOfSeason": 88,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 4
+        },
+        {
+          "date": "1989-10-29",
+          "dayOfSeason": 89,
+          "snowDepth": 2,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 6
+        },
+        {
+          "date": "1989-10-30",
+          "dayOfSeason": 90,
+          "snowDepth": 2,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 6
+        },
+        {
+          "date": "1989-10-31",
+          "dayOfSeason": 91,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 6
+        },
+        {
+          "date": "1989-11-01",
+          "dayOfSeason": 92,
+          "snowDepth": 0,
+          "dailySnowfall": 0.3,
+          "cumulativeSnowfall": 6.3
+        },
+        {
+          "date": "1989-11-02",
+          "dayOfSeason": 93,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 6.3
+        },
+        {
+          "date": "1989-11-03",
+          "dayOfSeason": 94,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 6.3
+        },
+        {
+          "date": "1989-11-04",
+          "dayOfSeason": 95,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 6.3
+        },
+        {
+          "date": "1989-11-05",
+          "dayOfSeason": 96,
+          "snowDepth": 2,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 8.3
+        },
+        {
+          "date": "1989-11-06",
+          "dayOfSeason": 97,
+          "snowDepth": 5,
+          "dailySnowfall": 3,
+          "cumulativeSnowfall": 11.3
+        },
+        {
+          "date": "1989-11-07",
+          "dayOfSeason": 98,
+          "snowDepth": 7,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 13.3
+        },
+        {
+          "date": "1989-11-08",
+          "dayOfSeason": 99,
+          "snowDepth": 12,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 15.3
+        },
+        {
+          "date": "1989-11-09",
+          "dayOfSeason": 100,
+          "snowDepth": 9,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 15.3
+        },
+        {
+          "date": "1989-11-10",
+          "dayOfSeason": 101,
+          "snowDepth": 7,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 15.3
+        },
+        {
+          "date": "1989-11-11",
+          "dayOfSeason": 102,
+          "snowDepth": 7,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 15.3
+        },
+        {
+          "date": "1989-11-12",
+          "dayOfSeason": 103,
+          "snowDepth": 5,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 15.3
+        },
+        {
+          "date": "1989-11-13",
+          "dayOfSeason": 104,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 15.3
+        },
+        {
+          "date": "1989-11-14",
+          "dayOfSeason": 105,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 15.3
+        },
+        {
+          "date": "1989-11-15",
+          "dayOfSeason": 106,
+          "snowDepth": 5,
+          "dailySnowfall": 5,
+          "cumulativeSnowfall": 20.3
+        },
+        {
+          "date": "1989-11-16",
+          "dayOfSeason": 107,
+          "snowDepth": 6,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 21.3
+        },
+        {
+          "date": "1989-11-17",
+          "dayOfSeason": 108,
+          "snowDepth": 6,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 21.3
+        },
+        {
+          "date": "1989-11-18",
+          "dayOfSeason": 109,
+          "snowDepth": 6,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 21.3
+        },
+        {
+          "date": "1989-11-19",
+          "dayOfSeason": 110,
+          "snowDepth": 6,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 21.3
+        },
+        {
+          "date": "1989-11-20",
+          "dayOfSeason": 111,
+          "snowDepth": 5,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 21.3
+        },
+        {
+          "date": "1989-11-21",
+          "dayOfSeason": 112,
+          "snowDepth": 4,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 21.3
+        },
+        {
+          "date": "1989-11-22",
+          "dayOfSeason": 113,
+          "snowDepth": 4,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 21.3
+        },
+        {
+          "date": "1989-11-23",
+          "dayOfSeason": 114,
+          "snowDepth": 2,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 21.3
+        },
+        {
+          "date": "1989-11-24",
+          "dayOfSeason": 115,
+          "snowDepth": 2,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 21.3
+        },
+        {
+          "date": "1989-11-25",
+          "dayOfSeason": 116,
+          "snowDepth": 10,
+          "dailySnowfall": 7,
+          "cumulativeSnowfall": 28.3
+        },
+        {
+          "date": "1989-11-26",
+          "dayOfSeason": 117,
+          "snowDepth": 10,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 28.3
+        },
+        {
+          "date": "1989-11-27",
+          "dayOfSeason": 118,
+          "snowDepth": 19,
+          "dailySnowfall": 7,
+          "cumulativeSnowfall": 35.3
+        },
+        {
+          "date": "1989-11-28",
+          "dayOfSeason": 119,
+          "snowDepth": 19,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 37.3
+        },
+        {
+          "date": "1989-11-29",
+          "dayOfSeason": 120,
+          "snowDepth": 18,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 37.3
+        },
+        {
+          "date": "1989-11-30",
+          "dayOfSeason": 121,
+          "snowDepth": 17,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 37.3
+        },
+        {
+          "date": "1989-12-01",
+          "dayOfSeason": 122,
+          "snowDepth": 15,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 37.3
+        },
+        {
+          "date": "1989-12-02",
+          "dayOfSeason": 123,
+          "snowDepth": 13,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 37.3
+        },
+        {
+          "date": "1989-12-03",
+          "dayOfSeason": 124,
+          "snowDepth": 12,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 37.3
+        },
+        {
+          "date": "1989-12-04",
+          "dayOfSeason": 125,
+          "snowDepth": 12,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 37.3
+        },
+        {
+          "date": "1989-12-05",
+          "dayOfSeason": 126,
+          "snowDepth": 12,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 37.3
+        },
+        {
+          "date": "1989-12-06",
+          "dayOfSeason": 127,
+          "snowDepth": 12,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 37.3
+        },
+        {
+          "date": "1989-12-07",
+          "dayOfSeason": 128,
+          "snowDepth": 13,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 38.3
+        },
+        {
+          "date": "1989-12-08",
+          "dayOfSeason": 129,
+          "snowDepth": 13,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 38.3
+        },
+        {
+          "date": "1989-12-09",
+          "dayOfSeason": 130,
+          "snowDepth": 13,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 38.3
+        },
+        {
+          "date": "1989-12-10",
+          "dayOfSeason": 131,
+          "snowDepth": 18,
+          "dailySnowfall": 5,
+          "cumulativeSnowfall": 43.3
+        },
+        {
+          "date": "1989-12-11",
+          "dayOfSeason": 132,
+          "snowDepth": 19,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 45.3
+        },
+        {
+          "date": "1989-12-12",
+          "dayOfSeason": 133,
+          "snowDepth": 18,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 45.3
+        },
+        {
+          "date": "1989-12-13",
+          "dayOfSeason": 134,
+          "snowDepth": 18,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 46.3
+        },
+        {
+          "date": "1989-12-14",
+          "dayOfSeason": 135,
+          "snowDepth": 19,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 47.3
+        },
+        {
+          "date": "1989-12-15",
+          "dayOfSeason": 136,
+          "snowDepth": 22,
+          "dailySnowfall": 5,
+          "cumulativeSnowfall": 52.3
+        },
+        {
+          "date": "1989-12-16",
+          "dayOfSeason": 137,
+          "snowDepth": 24,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 53.3
+        },
+        {
+          "date": "1989-12-17",
+          "dayOfSeason": 138,
+          "snowDepth": 24,
+          "dailySnowfall": 4,
+          "cumulativeSnowfall": 57.3
+        },
+        {
+          "date": "1989-12-18",
+          "dayOfSeason": 139,
+          "snowDepth": 29,
+          "dailySnowfall": 6,
+          "cumulativeSnowfall": 63.3
+        },
+        {
+          "date": "1989-12-19",
+          "dayOfSeason": 140,
+          "snowDepth": 29,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 64.3
+        },
+        {
+          "date": "1989-12-20",
+          "dayOfSeason": 141,
+          "snowDepth": 29,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.3
+        },
+        {
+          "date": "1989-12-21",
+          "dayOfSeason": 142,
+          "snowDepth": 25,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.3
+        },
+        {
+          "date": "1989-12-22",
+          "dayOfSeason": 143,
+          "snowDepth": 30,
+          "dailySnowfall": 5,
+          "cumulativeSnowfall": 69.3
+        },
+        {
+          "date": "1989-12-23",
+          "dayOfSeason": 144,
+          "snowDepth": 26,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 69.3
+        },
+        {
+          "date": "1989-12-24",
+          "dayOfSeason": 145,
+          "snowDepth": 26,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 69.3
+        },
+        {
+          "date": "1989-12-25",
+          "dayOfSeason": 146,
+          "snowDepth": 25,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 69.3
+        },
+        {
+          "date": "1989-12-26",
+          "dayOfSeason": 147,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 69.3
+        },
+        {
+          "date": "1989-12-27",
+          "dayOfSeason": 148,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 69.3
+        },
+        {
+          "date": "1989-12-28",
+          "dayOfSeason": 149,
+          "snowDepth": 23,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 69.3
+        },
+        {
+          "date": "1989-12-29",
+          "dayOfSeason": 150,
+          "snowDepth": 23,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 69.3
+        },
+        {
+          "date": "1989-12-30",
+          "dayOfSeason": 151,
+          "snowDepth": 25,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 71.3
+        },
+        {
+          "date": "1989-12-31",
+          "dayOfSeason": 152,
+          "snowDepth": 27,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 73.3
+        },
+        {
+          "date": "1990-01-01",
+          "dayOfSeason": 153,
+          "snowDepth": 27,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 73.3
+        },
+        {
+          "date": "1990-01-02",
+          "dayOfSeason": 154,
+          "snowDepth": 26,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 73.3
+        },
+        {
+          "date": "1990-01-03",
+          "dayOfSeason": 155,
+          "snowDepth": 25,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 73.3
+        },
+        {
+          "date": "1990-01-04",
+          "dayOfSeason": 156,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 73.3
+        },
+        {
+          "date": "1990-01-05",
+          "dayOfSeason": 157,
+          "snowDepth": 25,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 74.3
+        },
+        {
+          "date": "1990-01-06",
+          "dayOfSeason": 158,
+          "snowDepth": 25,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 74.3
+        },
+        {
+          "date": "1990-01-07",
+          "dayOfSeason": 159,
+          "snowDepth": 25,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 74.3
+        },
+        {
+          "date": "1990-01-08",
+          "dayOfSeason": 160,
+          "snowDepth": 25,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 74.3
+        },
+        {
+          "date": "1990-01-09",
+          "dayOfSeason": 161,
+          "snowDepth": 25,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 75.3
+        },
+        {
+          "date": "1990-01-10",
+          "dayOfSeason": 162,
+          "snowDepth": 23,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 75.3
+        },
+        {
+          "date": "1990-01-11",
+          "dayOfSeason": 163,
+          "snowDepth": 23,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 75.3
+        },
+        {
+          "date": "1990-01-12",
+          "dayOfSeason": 164,
+          "snowDepth": 23,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 75.3
+        },
+        {
+          "date": "1990-01-13",
+          "dayOfSeason": 165,
+          "snowDepth": 22,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 75.3
+        },
+        {
+          "date": "1990-01-14",
+          "dayOfSeason": 166,
+          "snowDepth": 24,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 77.3
+        },
+        {
+          "date": "1990-01-15",
+          "dayOfSeason": 167,
+          "snowDepth": 23,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 77.3
+        },
+        {
+          "date": "1990-01-16",
+          "dayOfSeason": 168,
+          "snowDepth": 25,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 79.3
+        },
+        {
+          "date": "1990-01-17",
+          "dayOfSeason": 169,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 79.3
+        },
+        {
+          "date": "1990-01-18",
+          "dayOfSeason": 170,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 79.3
+        },
+        {
+          "date": "1990-01-19",
+          "dayOfSeason": 171,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 79.3
+        },
+        {
+          "date": "1990-01-20",
+          "dayOfSeason": 172,
+          "snowDepth": 26,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 81.3
+        },
+        {
+          "date": "1990-01-21",
+          "dayOfSeason": 173,
+          "snowDepth": 26,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 81.3
+        },
+        {
+          "date": "1990-01-22",
+          "dayOfSeason": 174,
+          "snowDepth": 25,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 81.3
+        },
+        {
+          "date": "1990-01-23",
+          "dayOfSeason": 175,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 81.3
+        },
+        {
+          "date": "1990-01-24",
+          "dayOfSeason": 176,
+          "snowDepth": 24,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 82.3
+        },
+        {
+          "date": "1990-01-25",
+          "dayOfSeason": 177,
+          "snowDepth": 24,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 83.3
+        },
+        {
+          "date": "1990-01-26",
+          "dayOfSeason": 178,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 83.3
+        },
+        {
+          "date": "1990-01-27",
+          "dayOfSeason": 179,
+          "snowDepth": 24,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 85.3
+        },
+        {
+          "date": "1990-01-28",
+          "dayOfSeason": 180,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 85.3
+        },
+        {
+          "date": "1990-01-29",
+          "dayOfSeason": 181,
+          "snowDepth": 25,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 87.3
+        },
+        {
+          "date": "1990-01-30",
+          "dayOfSeason": 182,
+          "snowDepth": 27,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 89.3
+        },
+        {
+          "date": "1990-01-31",
+          "dayOfSeason": 183,
+          "snowDepth": 27,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 89.3
+        },
+        {
+          "date": "1990-02-01",
+          "dayOfSeason": 184,
+          "snowDepth": 28,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 90.3
+        },
+        {
+          "date": "1990-02-02",
+          "dayOfSeason": 185,
+          "snowDepth": 28,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 91.3
+        },
+        {
+          "date": "1990-02-03",
+          "dayOfSeason": 186,
+          "snowDepth": 28,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 93.3
+        },
+        {
+          "date": "1990-02-04",
+          "dayOfSeason": 187,
+          "snowDepth": 28,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 93.3
+        },
+        {
+          "date": "1990-02-05",
+          "dayOfSeason": 188,
+          "snowDepth": 28,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 93.3
+        },
+        {
+          "date": "1990-02-06",
+          "dayOfSeason": 189,
+          "snowDepth": 27,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 93.3
+        },
+        {
+          "date": "1990-02-07",
+          "dayOfSeason": 190,
+          "snowDepth": 27,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 93.3
+        },
+        {
+          "date": "1990-02-08",
+          "dayOfSeason": 191,
+          "snowDepth": 30,
+          "dailySnowfall": 3,
+          "cumulativeSnowfall": 96.3
+        },
+        {
+          "date": "1990-02-09",
+          "dayOfSeason": 192,
+          "snowDepth": 30,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 96.3
+        },
+        {
+          "date": "1990-02-10",
+          "dayOfSeason": 193,
+          "snowDepth": 33,
+          "dailySnowfall": 4,
+          "cumulativeSnowfall": 100.3
+        },
+        {
+          "date": "1990-02-11",
+          "dayOfSeason": 194,
+          "snowDepth": 33,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 100.3
+        },
+        {
+          "date": "1990-02-12",
+          "dayOfSeason": 195,
+          "snowDepth": 31,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 100.3
+        },
+        {
+          "date": "1990-02-13",
+          "dayOfSeason": 196,
+          "snowDepth": 30,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 100.3
+        },
+        {
+          "date": "1990-02-14",
+          "dayOfSeason": 197,
+          "snowDepth": 29,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 100.3
+        },
+        {
+          "date": "1990-02-15",
+          "dayOfSeason": 198,
+          "snowDepth": 33,
+          "dailySnowfall": 4,
+          "cumulativeSnowfall": 104.3
+        },
+        {
+          "date": "1990-02-16",
+          "dayOfSeason": 199,
+          "snowDepth": 33,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 105.3
+        },
+        {
+          "date": "1990-02-17",
+          "dayOfSeason": 200,
+          "snowDepth": 33,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 105.3
+        },
+        {
+          "date": "1990-02-18",
+          "dayOfSeason": 201,
+          "snowDepth": 32,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 105.3
+        },
+        {
+          "date": "1990-02-19",
+          "dayOfSeason": 202,
+          "snowDepth": 32,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 105.3
+        },
+        {
+          "date": "1990-02-20",
+          "dayOfSeason": 203,
+          "snowDepth": 32,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 105.3
+        },
+        {
+          "date": "1990-02-21",
+          "dayOfSeason": 204,
+          "snowDepth": 32,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 105.3
+        },
+        {
+          "date": "1990-02-22",
+          "dayOfSeason": 205,
+          "snowDepth": 33,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 106.3
+        },
+        {
+          "date": "1990-02-23",
+          "dayOfSeason": 206,
+          "snowDepth": 34,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 107.3
+        },
+        {
+          "date": "1990-02-24",
+          "dayOfSeason": 207,
+          "snowDepth": 32,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 107.3
+        },
+        {
+          "date": "1990-02-25",
+          "dayOfSeason": 208,
+          "snowDepth": 31,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 107.3
+        },
+        {
+          "date": "1990-02-26",
+          "dayOfSeason": 209,
+          "snowDepth": 29,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 107.3
+        },
+        {
+          "date": "1990-02-27",
+          "dayOfSeason": 210,
+          "snowDepth": 29,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 107.3
+        },
+        {
+          "date": "1990-02-28",
+          "dayOfSeason": 211,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 107.3
+        },
+        {
+          "date": "1990-03-01",
+          "dayOfSeason": 212,
+          "snowDepth": 29,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 107.3
+        },
+        {
+          "date": "1990-03-02",
+          "dayOfSeason": 213,
+          "snowDepth": 29,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 107.3
+        },
+        {
+          "date": "1990-03-03",
+          "dayOfSeason": 214,
+          "snowDepth": 29,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 107.3
+        },
+        {
+          "date": "1990-03-04",
+          "dayOfSeason": 215,
+          "snowDepth": 33,
+          "dailySnowfall": 5,
+          "cumulativeSnowfall": 112.3
+        },
+        {
+          "date": "1990-03-05",
+          "dayOfSeason": 216,
+          "snowDepth": 30,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 112.3
+        },
+        {
+          "date": "1990-03-06",
+          "dayOfSeason": 217,
+          "snowDepth": 37,
+          "dailySnowfall": 8,
+          "cumulativeSnowfall": 120.3
+        },
+        {
+          "date": "1990-03-07",
+          "dayOfSeason": 218,
+          "snowDepth": 49,
+          "dailySnowfall": 12,
+          "cumulativeSnowfall": 132.3
+        },
+        {
+          "date": "1990-03-08",
+          "dayOfSeason": 219,
+          "snowDepth": 47,
+          "dailySnowfall": 3,
+          "cumulativeSnowfall": 135.3
+        },
+        {
+          "date": "1990-03-09",
+          "dayOfSeason": 220,
+          "snowDepth": 42,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 135.3
+        },
+        {
+          "date": "1990-03-10",
+          "dayOfSeason": 221,
+          "snowDepth": 39,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 135.3
+        },
+        {
+          "date": "1990-03-11",
+          "dayOfSeason": 222,
+          "snowDepth": 39,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 135.3
+        },
+        {
+          "date": "1990-03-12",
+          "dayOfSeason": 223,
+          "snowDepth": 40,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 137.3
+        },
+        {
+          "date": "1990-03-13",
+          "dayOfSeason": 224,
+          "snowDepth": 41,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 139.3
+        },
+        {
+          "date": "1990-03-14",
+          "dayOfSeason": 225,
+          "snowDepth": 44,
+          "dailySnowfall": 3,
+          "cumulativeSnowfall": 142.3
+        },
+        {
+          "date": "1990-03-15",
+          "dayOfSeason": 226,
+          "snowDepth": 43,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 142.3
+        },
+        {
+          "date": "1990-03-16",
+          "dayOfSeason": 227,
+          "snowDepth": 42,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 142.3
+        },
+        {
+          "date": "1990-03-17",
+          "dayOfSeason": 228,
+          "snowDepth": 41,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 142.3
+        },
+        {
+          "date": "1990-03-18",
+          "dayOfSeason": 229,
+          "snowDepth": 42,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 143.3
+        },
+        {
+          "date": "1990-03-19",
+          "dayOfSeason": 230,
+          "snowDepth": 42,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 143.3
+        },
+        {
+          "date": "1990-03-20",
+          "dayOfSeason": 231,
+          "snowDepth": 40,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 143.3
+        },
+        {
+          "date": "1990-03-21",
+          "dayOfSeason": 232,
+          "snowDepth": 38,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 143.3
+        },
+        {
+          "date": "1990-03-22",
+          "dayOfSeason": 233,
+          "snowDepth": 37,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 143.3
+        },
+        {
+          "date": "1990-03-23",
+          "dayOfSeason": 234,
+          "snowDepth": 36,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 143.3
+        },
+        {
+          "date": "1990-03-24",
+          "dayOfSeason": 235,
+          "snowDepth": 36,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 145.3
+        },
+        {
+          "date": "1990-03-25",
+          "dayOfSeason": 236,
+          "snowDepth": 34,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 145.3
+        },
+        {
+          "date": "1990-03-26",
+          "dayOfSeason": 237,
+          "snowDepth": 32,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 145.3
+        },
+        {
+          "date": "1990-03-27",
+          "dayOfSeason": 238,
+          "snowDepth": 30,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 145.3
+        },
+        {
+          "date": "1990-03-28",
+          "dayOfSeason": 239,
+          "snowDepth": 32,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 147.3
+        },
+        {
+          "date": "1990-03-29",
+          "dayOfSeason": 240,
+          "snowDepth": 31,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-03-30",
+          "dayOfSeason": 241,
+          "snowDepth": 31,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-03-31",
+          "dayOfSeason": 242,
+          "snowDepth": 30,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-04-01",
+          "dayOfSeason": 243,
+          "snowDepth": 30,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-04-02",
+          "dayOfSeason": 244,
+          "snowDepth": 29,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-04-03",
+          "dayOfSeason": 245,
+          "snowDepth": 28,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-04-04",
+          "dayOfSeason": 246,
+          "snowDepth": 27,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-04-05",
+          "dayOfSeason": 247,
+          "snowDepth": 26,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-04-06",
+          "dayOfSeason": 248,
+          "snowDepth": 26,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-04-07",
+          "dayOfSeason": 249,
+          "snowDepth": 24,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-04-08",
+          "dayOfSeason": 250,
+          "snowDepth": 23,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 148.3
+        },
+        {
+          "date": "1990-04-09",
+          "dayOfSeason": 251,
+          "snowDepth": 21,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 149.3
+        },
+        {
+          "date": "1990-04-10",
+          "dayOfSeason": 252,
+          "snowDepth": 24,
+          "dailySnowfall": 3,
+          "cumulativeSnowfall": 152.3
+        },
+        {
+          "date": "1990-04-11",
+          "dayOfSeason": 253,
+          "snowDepth": 22,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 152.3
+        },
+        {
+          "date": "1990-04-12",
+          "dayOfSeason": 254,
+          "snowDepth": 20,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 152.3
+        },
+        {
+          "date": "1990-04-13",
+          "dayOfSeason": 255,
+          "snowDepth": 21,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-14",
+          "dayOfSeason": 256,
+          "snowDepth": 20,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-15",
+          "dayOfSeason": 257,
+          "snowDepth": 17,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-16",
+          "dayOfSeason": 258,
+          "snowDepth": 13,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-17",
+          "dayOfSeason": 259,
+          "snowDepth": 10,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-18",
+          "dayOfSeason": 260,
+          "snowDepth": 6,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-19",
+          "dayOfSeason": 261,
+          "snowDepth": 2,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-20",
+          "dayOfSeason": 262,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-21",
+          "dayOfSeason": 263,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-22",
+          "dayOfSeason": 264,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-23",
+          "dayOfSeason": 265,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-24",
+          "dayOfSeason": 266,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 154.3
+        },
+        {
+          "date": "1990-04-25",
+          "dayOfSeason": 267,
+          "snowDepth": 1,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 155.3
+        },
+        {
+          "date": "1990-04-26",
+          "dayOfSeason": 268,
+          "snowDepth": 2,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 157.3
+        },
+        {
+          "date": "1990-04-27",
+          "dayOfSeason": 269,
+          "snowDepth": 7,
+          "dailySnowfall": 5,
+          "cumulativeSnowfall": 162.3
+        },
+        {
+          "date": "1990-04-28",
+          "dayOfSeason": 270,
+          "snowDepth": 8,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 163.3
+        },
+        {
+          "date": "1990-04-29",
+          "dayOfSeason": 271,
+          "snowDepth": 10,
+          "dailySnowfall": 4,
+          "cumulativeSnowfall": 167.3
+        },
+        {
+          "date": "1990-04-30",
+          "dayOfSeason": 272,
+          "snowDepth": 8,
+          "dailySnowfall": 3,
+          "cumulativeSnowfall": 170.3
+        },
+        {
+          "date": "1990-05-01",
+          "dayOfSeason": 273,
+          "snowDepth": 6,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 170.3
+        },
+        {
+          "date": "1990-05-02",
+          "dayOfSeason": 274,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 170.3
+        },
+        {
+          "date": "1990-05-03",
+          "dayOfSeason": 275,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 170.3
+        },
+        {
+          "date": "1990-05-04",
+          "dayOfSeason": 276,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 170.3
+        },
+        {
+          "date": "1990-05-05",
+          "dayOfSeason": 277,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 170.3
+        },
+        {
+          "date": "1990-05-06",
+          "dayOfSeason": 278,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 170.3
+        },
+        {
+          "date": "1990-05-07",
+          "dayOfSeason": 279,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 170.3
+        },
+        {
+          "date": "1990-05-08",
+          "dayOfSeason": 280,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 170.3
+        },
+        {
+          "date": "1990-05-09",
+          "dayOfSeason": 281,
+          "snowDepth": 4,
+          "dailySnowfall": 4,
+          "cumulativeSnowfall": 174.3
+        },
+        {
+          "date": "1990-05-10",
+          "dayOfSeason": 282,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 174.3
+        },
+        {
+          "date": "1990-05-11",
+          "dayOfSeason": 283,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 174.3
+        },
+        {
+          "date": "1990-05-12",
+          "dayOfSeason": 284,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 174.3
+        },
+        {
+          "date": "1990-05-13",
+          "dayOfSeason": 285,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 174.3
+        },
+        {
+          "date": "1990-05-14",
+          "dayOfSeason": 286,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 174.3
+        },
+        {
+          "date": "1990-05-15",
+          "dayOfSeason": 287,
+          "snowDepth": 1,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 175.3
+        },
+        {
+          "date": "1990-05-16",
+          "dayOfSeason": 288,
+          "snowDepth": 6,
+          "dailySnowfall": 5,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-17",
+          "dayOfSeason": 289,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-18",
+          "dayOfSeason": 290,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-19",
+          "dayOfSeason": 291,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-20",
+          "dayOfSeason": 292,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-21",
+          "dayOfSeason": 293,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-22",
+          "dayOfSeason": 294,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-23",
+          "dayOfSeason": 295,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-24",
+          "dayOfSeason": 296,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-25",
+          "dayOfSeason": 297,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-26",
+          "dayOfSeason": 298,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-27",
+          "dayOfSeason": 299,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-28",
+          "dayOfSeason": 300,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-29",
+          "dayOfSeason": 301,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-30",
+          "dayOfSeason": 302,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-05-31",
+          "dayOfSeason": 303,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-06-01",
+          "dayOfSeason": 304,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.3
+        },
+        {
+          "date": "1990-06-02",
+          "dayOfSeason": 305,
+          "snowDepth": 1,
+          "dailySnowfall": 0.5,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-03",
+          "dayOfSeason": 306,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-04",
+          "dayOfSeason": 307,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-05",
+          "dayOfSeason": 308,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-06",
+          "dayOfSeason": 309,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-07",
+          "dayOfSeason": 310,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-08",
+          "dayOfSeason": 311,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-09",
+          "dayOfSeason": 312,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-10",
+          "dayOfSeason": 313,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-11",
+          "dayOfSeason": 314,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-12",
+          "dayOfSeason": 315,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-13",
+          "dayOfSeason": 316,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-14",
+          "dayOfSeason": 317,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-15",
+          "dayOfSeason": 318,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-16",
+          "dayOfSeason": 319,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-17",
+          "dayOfSeason": 320,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-18",
+          "dayOfSeason": 321,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-19",
+          "dayOfSeason": 322,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-20",
+          "dayOfSeason": 323,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-21",
+          "dayOfSeason": 324,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-22",
+          "dayOfSeason": 325,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-23",
+          "dayOfSeason": 326,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-24",
+          "dayOfSeason": 327,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-25",
+          "dayOfSeason": 328,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-26",
+          "dayOfSeason": 329,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-27",
+          "dayOfSeason": 330,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-28",
+          "dayOfSeason": 331,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-29",
+          "dayOfSeason": 332,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
+        {
+          "date": "1990-06-30",
+          "dayOfSeason": 333,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 180.8
+        },
         {
           "date": "1990-07-01",
           "dayOfSeason": 334,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-02",
           "dayOfSeason": 335,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-03",
           "dayOfSeason": 336,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-04",
           "dayOfSeason": 337,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-05",
           "dayOfSeason": 338,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-06",
           "dayOfSeason": 339,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-07",
           "dayOfSeason": 340,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-08",
           "dayOfSeason": 341,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-09",
           "dayOfSeason": 342,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-10",
           "dayOfSeason": 343,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-11",
           "dayOfSeason": 344,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-12",
           "dayOfSeason": 345,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-13",
           "dayOfSeason": 346,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-14",
           "dayOfSeason": 347,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-15",
           "dayOfSeason": 348,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-16",
           "dayOfSeason": 349,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-17",
           "dayOfSeason": 350,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-18",
           "dayOfSeason": 351,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-19",
           "dayOfSeason": 352,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-20",
           "dayOfSeason": 353,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-21",
           "dayOfSeason": 354,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-22",
           "dayOfSeason": 355,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-23",
           "dayOfSeason": 356,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-24",
           "dayOfSeason": 357,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-25",
           "dayOfSeason": 358,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-26",
           "dayOfSeason": 359,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-27",
           "dayOfSeason": 360,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-28",
           "dayOfSeason": 361,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-29",
           "dayOfSeason": 362,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-30",
           "dayOfSeason": 363,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         },
         {
           "date": "1990-07-31",
           "dayOfSeason": 364,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 0
+          "cumulativeSnowfall": 180.8
         }
       ]
     },
@@ -88804,7 +91142,7 @@
     {
       "season": "2025-26",
       "startYear": 2025,
-      "totalSnowfall": 32.9,
+      "totalSnowfall": 70.9,
       "dailyData": [
         {
           "date": "2025-08-01",
@@ -89768,7 +92106,7 @@
         {
           "date": "2025-12-16",
           "dayOfSeason": 137,
-          "snowDepth": 0,
+          "snowDepth": 9,
           "dailySnowfall": 0,
           "cumulativeSnowfall": 31.9
         },
@@ -89827,6 +92165,363 @@
           "snowDepth": 8,
           "dailySnowfall": 0,
           "cumulativeSnowfall": 32.9
+        },
+        {
+          "date": "2025-12-25",
+          "dayOfSeason": 146,
+          "snowDepth": 8,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 32.9
+        },
+        {
+          "date": "2025-12-26",
+          "dayOfSeason": 147,
+          "snowDepth": 8,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 32.9
+        },
+        {
+          "date": "2025-12-27",
+          "dayOfSeason": 148,
+          "snowDepth": 8,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 32.9
+        },
+        {
+          "date": "2025-12-28",
+          "dayOfSeason": 149,
+          "snowDepth": 17,
+          "dailySnowfall": 9,
+          "cumulativeSnowfall": 41.9
+        },
+        {
+          "date": "2025-12-29",
+          "dayOfSeason": 150,
+          "snowDepth": 16,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 41.9
+        },
+        {
+          "date": "2025-12-30",
+          "dayOfSeason": 151,
+          "snowDepth": 15,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 41.9
+        },
+        {
+          "date": "2025-12-31",
+          "dayOfSeason": 152,
+          "snowDepth": 14,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 41.9
+        },
+        {
+          "date": "2026-01-01",
+          "dayOfSeason": 153,
+          "snowDepth": 14,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 41.9
+        },
+        {
+          "date": "2026-01-02",
+          "dayOfSeason": 154,
+          "snowDepth": 14,
+          "dailySnowfall": 0.8,
+          "cumulativeSnowfall": 42.7
+        },
+        {
+          "date": "2026-01-03",
+          "dayOfSeason": 155,
+          "snowDepth": 14,
+          "dailySnowfall": 0.5,
+          "cumulativeSnowfall": 43.2
+        },
+        {
+          "date": "2026-01-04",
+          "dayOfSeason": 156,
+          "snowDepth": 13,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 43.2
+        },
+        {
+          "date": "2026-01-05",
+          "dayOfSeason": 157,
+          "snowDepth": 13,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 43.2
+        },
+        {
+          "date": "2026-01-06",
+          "dayOfSeason": 158,
+          "snowDepth": 17,
+          "dailySnowfall": 4,
+          "cumulativeSnowfall": 47.2
+        },
+        {
+          "date": "2026-01-07",
+          "dayOfSeason": 159,
+          "snowDepth": 17,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 47.2
+        },
+        {
+          "date": "2026-01-08",
+          "dayOfSeason": 160,
+          "snowDepth": 17,
+          "dailySnowfall": 1.7,
+          "cumulativeSnowfall": 48.9
+        },
+        {
+          "date": "2026-01-09",
+          "dayOfSeason": 161,
+          "snowDepth": 21,
+          "dailySnowfall": 5,
+          "cumulativeSnowfall": 53.9
+        },
+        {
+          "date": "2026-01-10",
+          "dayOfSeason": 162,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 53.9
+        },
+        {
+          "date": "2026-01-11",
+          "dayOfSeason": 163,
+          "snowDepth": 19,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 53.9
+        },
+        {
+          "date": "2026-01-12",
+          "dayOfSeason": 164,
+          "snowDepth": 19,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 53.9
+        },
+        {
+          "date": "2026-01-13",
+          "dayOfSeason": 165,
+          "snowDepth": 18,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 53.9
+        },
+        {
+          "date": "2026-01-14",
+          "dayOfSeason": 166,
+          "snowDepth": 17,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 53.9
+        },
+        {
+          "date": "2026-01-15",
+          "dayOfSeason": 167,
+          "snowDepth": 17,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 53.9
+        },
+        {
+          "date": "2026-01-16",
+          "dayOfSeason": 168,
+          "snowDepth": 18,
+          "dailySnowfall": 2,
+          "cumulativeSnowfall": 55.9
+        },
+        {
+          "date": "2026-01-17",
+          "dayOfSeason": 169,
+          "snowDepth": 18,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 56.9
+        },
+        {
+          "date": "2026-01-18",
+          "dayOfSeason": 170,
+          "snowDepth": 18,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 56.9
+        },
+        {
+          "date": "2026-01-19",
+          "dayOfSeason": 171,
+          "snowDepth": 18,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 57.9
+        },
+        {
+          "date": "2026-01-20",
+          "dayOfSeason": 172,
+          "snowDepth": 18,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 57.9
+        },
+        {
+          "date": "2026-01-21",
+          "dayOfSeason": 173,
+          "snowDepth": 17,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 57.9
+        },
+        {
+          "date": "2026-01-22",
+          "dayOfSeason": 174,
+          "snowDepth": 17,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 57.9
+        },
+        {
+          "date": "2026-01-23",
+          "dayOfSeason": 175,
+          "snowDepth": 17,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 57.9
+        },
+        {
+          "date": "2026-01-24",
+          "dayOfSeason": 176,
+          "snowDepth": 21,
+          "dailySnowfall": 4,
+          "cumulativeSnowfall": 61.9
+        },
+        {
+          "date": "2026-01-25",
+          "dayOfSeason": 177,
+          "snowDepth": 20,
+          "dailySnowfall": 0.5,
+          "cumulativeSnowfall": 62.4
+        },
+        {
+          "date": "2026-01-26",
+          "dayOfSeason": 178,
+          "snowDepth": 20,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 63.4
+        },
+        {
+          "date": "2026-01-27",
+          "dayOfSeason": 179,
+          "snowDepth": 20,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 63.4
+        },
+        {
+          "date": "2026-01-28",
+          "dayOfSeason": 180,
+          "snowDepth": 20,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 63.4
+        },
+        {
+          "date": "2026-01-29",
+          "dayOfSeason": 181,
+          "snowDepth": 20,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 63.4
+        },
+        {
+          "date": "2026-01-30",
+          "dayOfSeason": 182,
+          "snowDepth": 21,
+          "dailySnowfall": 1.5,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-01-31",
+          "dayOfSeason": 183,
+          "snowDepth": 21,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-01",
+          "dayOfSeason": 184,
+          "snowDepth": 21,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-02",
+          "dayOfSeason": 185,
+          "snowDepth": 20,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-03",
+          "dayOfSeason": 186,
+          "snowDepth": 20,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-06",
+          "dayOfSeason": 189,
+          "snowDepth": 19,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-07",
+          "dayOfSeason": 190,
+          "snowDepth": 19,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-08",
+          "dayOfSeason": 191,
+          "snowDepth": 19,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-09",
+          "dayOfSeason": 192,
+          "snowDepth": 19,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-10",
+          "dayOfSeason": 193,
+          "snowDepth": 19,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-11",
+          "dayOfSeason": 194,
+          "snowDepth": 19,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 64.9
+        },
+        {
+          "date": "2026-02-12",
+          "dayOfSeason": 195,
+          "snowDepth": 20,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 65.9
+        },
+        {
+          "date": "2026-02-13",
+          "dayOfSeason": 196,
+          "snowDepth": 20,
+          "dailySnowfall": 1,
+          "cumulativeSnowfall": 66.9
+        },
+        {
+          "date": "2026-02-14",
+          "dayOfSeason": 197,
+          "snowDepth": 24,
+          "dailySnowfall": 4,
+          "cumulativeSnowfall": 70.9
+        },
+        {
+          "date": "2026-02-15",
+          "dayOfSeason": 198,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 70.9
         }
       ]
     }

@@ -76,7 +76,31 @@ function parseSnowDepth(value) {
 }
 
 /**
+ * Parse a single CSV line into columns (handles quoted fields)
+ */
+function parseCsvLine(line) {
+    const columns = [];
+    let current = '';
+    let inQuotes = false;
+
+    for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+        if (char === '"') {
+            inQuotes = !inQuotes;
+        } else if (char === ',' && !inQuotes) {
+            columns.push(current.trim());
+            current = '';
+        } else {
+            current += char;
+        }
+    }
+    columns.push(current.trim());
+    return columns;
+}
+
+/**
  * Process the NOAA CSV data
+ * CSV format: STATION, DATE, SNOW, SNWD (from NCEI daily-summaries)
  */
 function processNoaaData() {
     console.log('Reading NOAA data from:', INPUT_CSV);
@@ -84,8 +108,21 @@ function processNoaaData() {
     const csvContent = fs.readFileSync(INPUT_CSV, 'utf8');
     const lines = csvContent.trim().split('\n');
 
-    // Skip header
+    if (lines.length < 2) {
+        throw new Error('CSV has no data rows');
+    }
+
+    const headerLine = lines[0];
     const dataLines = lines.slice(1);
+
+    const headerCols = parseCsvLine(headerLine);
+    const dateIdx = headerCols.indexOf('DATE');
+    const snowIdx = headerCols.indexOf('SNOW');
+    const snwdIdx = headerCols.indexOf('SNWD');
+
+    if (dateIdx === -1 || snowIdx === -1 || snwdIdx === -1) {
+        throw new Error(`CSV missing required columns. Header: ${headerCols.join(', ')}`);
+    }
 
     console.log(`Processing ${dataLines.length} data records...`);
 
@@ -94,31 +131,15 @@ function processNoaaData() {
     let processedCount = 0;
 
     for (const line of dataLines) {
-        // More robust CSV parsing - split on commas but handle quoted fields
-        const columns = [];
-        let current = '';
-        let inQuotes = false;
+        const columns = parseCsvLine(line);
 
-        for (let i = 0; i < line.length; i++) {
-            const char = line[i];
-            if (char === '"') {
-                inQuotes = !inQuotes;
-            } else if (char === ',' && !inQuotes) {
-                columns.push(current);
-                current = '';
-            } else {
-                current += char;
-            }
-        }
-        columns.push(current); // Add the last column
-
-        if (columns.length < 15) {
+        if (columns.length <= Math.max(dateIdx, snowIdx, snwdIdx)) {
             continue;
         }
 
-        const dateStr = columns[2]; // DATE column
-        const snowfall = columns[11]; // SNOW column
-        const snowDepth = columns[13]; // SNWD column
+        const dateStr = columns[dateIdx];
+        const snowfall = columns[snowIdx];
+        const snowDepth = columns[snwdIdx];
 
         if (!dateStr || dateStr.length !== 10) {
             continue;
