@@ -2,7 +2,7 @@
   "source": "NOAA Winter Park Station (USC00059175)",
   "elevation": 9100,
   "units": "inches",
-  "lastUpdated": "2026-03-27",
+  "lastUpdated": "2026-03-28",
   "dataRange": "1989-2026",
   "note": "Processed from NOAA Global Historical Climatology Network Daily (GHCND) data. Daily snowfall from SNOW column, snow depth from SNWD column.",
   "seasons": [
@@ -91142,7 +91142,7 @@
     {
       "season": "2025-26",
       "startYear": 2025,
-      "totalSnowfall": 107.7,
+      "totalSnowfall": 111.2,
       "dailyData": [
         {
           "date": "2025-08-01",
@@ -92608,179 +92608,186 @@
           "cumulativeSnowfall": 81.7
         },
         {
+          "date": "2026-02-26",
+          "dayOfSeason": 209,
+          "snowDepth": 28,
+          "dailySnowfall": 3.5,
+          "cumulativeSnowfall": 85.2
+        },
+        {
           "date": "2026-02-27",
           "dayOfSeason": 210,
           "snowDepth": 26,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 81.7
+          "cumulativeSnowfall": 85.2
         },
         {
           "date": "2026-02-28",
           "dayOfSeason": 211,
           "snowDepth": 26,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 81.7
+          "cumulativeSnowfall": 85.2
         },
         {
           "date": "2026-03-01",
           "dayOfSeason": 212,
           "snowDepth": 26,
           "dailySnowfall": 1.5,
-          "cumulativeSnowfall": 83.2
+          "cumulativeSnowfall": 86.7
         },
         {
           "date": "2026-03-02",
           "dayOfSeason": 213,
           "snowDepth": 26,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 83.2
+          "cumulativeSnowfall": 86.7
         },
         {
           "date": "2026-03-03",
           "dayOfSeason": 214,
           "snowDepth": 27,
           "dailySnowfall": 1.8,
-          "cumulativeSnowfall": 85
+          "cumulativeSnowfall": 88.5
         },
         {
           "date": "2026-03-04",
           "dayOfSeason": 215,
           "snowDepth": 25,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 85
+          "cumulativeSnowfall": 88.5
         },
         {
           "date": "2026-03-05",
           "dayOfSeason": 216,
           "snowDepth": 30,
           "dailySnowfall": 5.5,
-          "cumulativeSnowfall": 90.5
+          "cumulativeSnowfall": 94
         },
         {
           "date": "2026-03-07",
           "dayOfSeason": 218,
           "snowDepth": 34,
           "dailySnowfall": 7.5,
-          "cumulativeSnowfall": 98
+          "cumulativeSnowfall": 101.5
         },
         {
           "date": "2026-03-08",
           "dayOfSeason": 219,
           "snowDepth": 32,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 98
+          "cumulativeSnowfall": 101.5
         },
         {
           "date": "2026-03-09",
           "dayOfSeason": 220,
           "snowDepth": 29,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 98
+          "cumulativeSnowfall": 101.5
         },
         {
           "date": "2026-03-10",
           "dayOfSeason": 221,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 98
+          "cumulativeSnowfall": 101.5
         },
         {
           "date": "2026-03-11",
           "dayOfSeason": 222,
           "snowDepth": 31,
           "dailySnowfall": 4,
-          "cumulativeSnowfall": 102
+          "cumulativeSnowfall": 105.5
         },
         {
           "date": "2026-03-12",
           "dayOfSeason": 223,
           "snowDepth": 28,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 102
+          "cumulativeSnowfall": 105.5
         },
         {
           "date": "2026-03-13",
           "dayOfSeason": 224,
           "snowDepth": 28,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 102
+          "cumulativeSnowfall": 105.5
         },
         {
           "date": "2026-03-14",
           "dayOfSeason": 225,
           "snowDepth": 27,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 102
+          "cumulativeSnowfall": 105.5
         },
         {
           "date": "2026-03-15",
           "dayOfSeason": 226,
           "snowDepth": 30,
           "dailySnowfall": 5,
-          "cumulativeSnowfall": 107
+          "cumulativeSnowfall": 110.5
         },
         {
           "date": "2026-03-16",
           "dayOfSeason": 227,
           "snowDepth": 29,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 107
+          "cumulativeSnowfall": 110.5
         },
         {
           "date": "2026-03-17",
           "dayOfSeason": 228,
           "snowDepth": 29,
           "dailySnowfall": 0.7,
-          "cumulativeSnowfall": 107.7
+          "cumulativeSnowfall": 111.2
         },
         {
           "date": "2026-03-18",
           "dayOfSeason": 229,
           "snowDepth": 26,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 107.7
+          "cumulativeSnowfall": 111.2
         },
         {
           "date": "2026-03-19",
           "dayOfSeason": 230,
           "snowDepth": 26,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 107.7
+          "cumulativeSnowfall": 111.2
         },
         {
           "date": "2026-03-20",
           "dayOfSeason": 231,
           "snowDepth": 0,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 107.7
+          "cumulativeSnowfall": 111.2
         },
         {
           "date": "2026-03-21",
           "dayOfSeason": 232,
           "snowDepth": 23,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 107.7
+          "cumulativeSnowfall": 111.2
         },
         {
           "date": "2026-03-22",
           "dayOfSeason": 233,
           "snowDepth": 22,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 107.7
+          "cumulativeSnowfall": 111.2
         },
         {
           "date": "2026-03-23",
           "dayOfSeason": 234,
           "snowDepth": 21,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 107.7
+          "cumulativeSnowfall": 111.2
         },
         {
           "date": "2026-03-24",
           "dayOfSeason": 235,
           "snowDepth": 20,
           "dailySnowfall": 0,
-          "cumulativeSnowfall": 107.7
+          "cumulativeSnowfall": 111.2
         }
       ]
     }
