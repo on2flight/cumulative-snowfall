@@ -2,7 +2,7 @@
   "source": "NOAA Winter Park Station (USC00059175)",
   "elevation": 9100,
   "units": "inches",
-  "lastUpdated": "2026-09-11",
+  "lastUpdated": "2026-09-12",
   "dataRange": "1989-2026",
   "note": "Processed from NOAA Global Historical Climatology Network Daily (GHCND) data. Daily snowfall from SNOW column, snow depth from SNWD column.",
   "seasons": [
@@ -93968,6 +93968,27 @@
         {
           "date": "2026-09-07",
           "dayOfSeason": 37,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "2026-09-08",
+          "dayOfSeason": 38,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "2026-09-09",
+          "dayOfSeason": 39,
+          "snowDepth": 0,
+          "dailySnowfall": 0,
+          "cumulativeSnowfall": 0
+        },
+        {
+          "date": "2026-09-10",
+          "dayOfSeason": 40,
           "snowDepth": 0,
           "dailySnowfall": 0,
           "cumulativeSnowfall": 0
